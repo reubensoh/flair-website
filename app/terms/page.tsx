@@ -1,8 +1,8 @@
 export default function TermsOfService() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 leading-relaxed">
+    <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Terms of Service</h1>
-      <p className="mb-8 text-sm text-gray-500">Last Updated: March 23, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: March 23, 2026</p>
       <p className="mb-8">Welcome to Flair Health. By downloading, accessing, or using the Flair Health mobile application (&quot;App&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, please do not use the App.</p>
       <div className="space-y-8">
         <section>
@@ -50,7 +50,7 @@ export default function TermsOfService() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">8. Contact Information</h2>
-          <p>If you have any questions or concerns regarding these Terms, please contact us at <a href="mailto:support@flairhealth.app" className="text-blue-600 hover:underline">support@flairhealth.app</a>.</p>
+          <p>If you have any questions or concerns regarding these Terms, please contact us at <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a>.</p>
         </section>
       </div>
     </main>

@@ -1,8 +1,8 @@
 export default function PrivacyPolicy() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 leading-relaxed">
+    <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="mb-8 text-sm text-gray-500">Last Updated: March 23, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: March 23, 2026</p>
       <p className="mb-8">Welcome to Flair Health. Your health journey is yours alone. We built Flair with one core belief: your data belongs strictly to you — and only you decide what happens to it. This Privacy Policy explains exactly how we handle (and don&apos;t handle) your information.</p>
       <div className="space-y-8">
         <section>
@@ -78,9 +78,9 @@ export default function PrivacyPolicy() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">9. Contact Us</h2>
-          <p>Questions? Reach out at <a href="mailto:support@flairhealth.app" className="text-blue-600 hover:underline">support@flairhealth.app</a>. We&apos;re here to help.</p>
+          <p>Questions? Reach out at <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a>. We&apos;re here to help.</p>
         </section>
-        <p className="mt-8 italic text-gray-500">We may update this policy from time to time. We&apos;ll notify you of material changes within the App.</p>
+        <p className="mt-8 italic text-gray-500 dark:text-gray-400">We may update this policy from time to time. We&apos;ll notify you of material changes within the App.</p>
       </div>
     </main>
   );
