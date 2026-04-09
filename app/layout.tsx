@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "Flair Health",
   description: "Your personal health journal. Private, offline-first, and powered by AI.",
   icons: {
-    icon: "/app_icon.png",
-    apple: "/app_icon.png",
+    icon: "/launcher_icon.png",
+    apple: "/launcher_icon.png",
   },
 };
 
