@@ -6,7 +6,7 @@ export default function Support() {
         For support, email us at{" "}
         <a
           href="mailto:support@flairhealth.app"
-          className="text-blue-600 dark:text-blue-400 hover:underline"
+          className="text-[#9156F1] dark:text-[#D4A3E2] hover:underline"
         >
           support@flairhealth.app
         </a>

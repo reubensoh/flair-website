@@ -50,7 +50,7 @@ export default function TermsOfService() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">8. Contact Information</h2>
-          <p>If you have any questions or concerns regarding these Terms, please contact us at <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a>.</p>
+          <p>If you have any questions or concerns regarding these Terms, please contact us at <a href="mailto:support@flairhealth.app" className="text-[#9156F1] dark:text-[#D4A3E2] hover:underline">support@flairhealth.app</a>.</p>
         </section>
       </div>
     </main>

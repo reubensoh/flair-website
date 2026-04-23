@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">9. Contact Us</h2>
-          <p>Questions? Reach out at <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a>. We&apos;re here to help.</p>
+          <p>Questions? Reach out at <a href="mailto:support@flairhealth.app" className="text-[#9156F1] dark:text-[#D4A3E2] hover:underline">support@flairhealth.app</a>. We&apos;re here to help.</p>
         </section>
         <p className="mt-8 italic text-gray-500 dark:text-gray-400">We may update this policy from time to time. We&apos;ll notify you of material changes within the App.</p>
       </div>

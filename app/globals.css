@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
+/* ── Flair Brand Colour Tokens ────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --flair-purple:    #9156F1;   /* Polaris Purple     */
+  --flair-lavender:  #D4A3E2;   /* Lightyear Lavender */
+  --flair-sea-green: #5CEEAF;   /* Sea Green          */
+  --flair-mars-red:  #FD7C71;   /* Mars Red           */
+  --flair-burgundy:  #201E4B;   /* Blackhole Burgundy */
+  --flair-yellow:    #FAFA82;   /* Orb Yellow         */
+  --flair-galactic:  #C6E7A3;   /* Galactic Green     */
+  --flair-neutral:   #ECE9E7;   /* Nebula Neutral     */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #EFEFEF;
+  --foreground: #201E4B;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #201E4B;   /* Blackhole Burgundy */
+    --foreground: #ECE9E7;   /* Nebula Neutral     */
   }
+}
+
+@theme inline {
+  --color-background:       var(--background);
+  --color-foreground:       var(--foreground);
+  --color-flair-purple:     var(--flair-purple);
+  --color-flair-lavender:   var(--flair-lavender);
+  --color-flair-sea-green:  var(--flair-sea-green);
+  --color-flair-mars-red:   var(--flair-mars-red);
+  --color-flair-burgundy:   var(--flair-burgundy);
+  --color-flair-neutral:    var(--flair-neutral);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
 }
