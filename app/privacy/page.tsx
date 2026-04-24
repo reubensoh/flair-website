@@ -44,6 +44,7 @@ export default function PrivacyPolicy() {
             <li><strong>No Persistence:</strong> Our routing layer processes this data in memory and does not log, store, or retain it. AI inference is performed via Google&apos;s Gemini API and is subject to Google&apos;s API Terms of Service. We do not share personally identifiable information with Google.</li>
             <li><strong>No Training:</strong> Your data is not used by our routing layer to train any model. Google&apos;s own data handling is governed by their API Terms linked above.</li>
             <li><strong>Anonymous Telemetry:</strong> AI requests include a hardware-derived anonymous identifier (not linked to any personal information) used only for aggregate diagnostics. This cannot be used to identify you.</li>
+            <li><strong>Sensitive Medical Context:</strong> If you optionally provide medical conditions (such as diabetes, kidney or liver conditions, or injuries) or fasting states, this information is kept strictly on your device and transmitted to the AI ephemerally solely to ensure that generated protocols do not suggest activities that could be harmful to you. This data is never stored on our servers, never retained after your request is processed, and is treated as sensitive health data under applicable law.</li>
           </ul>
         </section>
         <section>

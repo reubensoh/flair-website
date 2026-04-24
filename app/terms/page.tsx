@@ -41,6 +41,7 @@ export default function TermsOfService() {
             <li>Use the App for any illegal or unauthorized purpose.</li>
             <li>Use the App to make medical, dietary, or treatment decisions without consulting a qualified healthcare provider.</li>
           </ul>
+          <p className="mt-3"><strong>Virtual Items:</strong> Virtual items, including Insight Energy (&quot;Zaps&quot;) or &quot;Flames,&quot; have no real-world monetary value, cannot be exchanged for cash, and are licensed to you solely for use within the App. Regal Pines Pte. Ltd. reserves the right to modify, cap, or revoke these virtual items at any time without compensation.</p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">6. Limitation of Liability</h2>
