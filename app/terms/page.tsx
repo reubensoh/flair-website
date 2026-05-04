@@ -2,7 +2,7 @@ export default function TermsOfService() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Terms of Service</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: April 24, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: May 4, 2026</p>
       <p className="mb-8">Flair Health is a product of Regal Pines Pte. Ltd. (Singapore). By downloading, accessing, or using the Flair Health mobile application (&quot;App&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, please do not use the App.</p>
       <div className="space-y-8">
         <section>
@@ -23,13 +23,15 @@ export default function TermsOfService() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">4. Artificial Intelligence Features</h2>
-          <p className="mb-2">By using features like &quot;Level Up,&quot; &quot;Magic Lens,&quot; and the Blueprint Protocol, you acknowledge that:</p>
+          <p className="mb-2">By using features like &quot;Level Up,&quot; &quot;Magic Lens,&quot; &quot;Eat Now,&quot; &quot;Document Scanner,&quot; and the Blueprint Protocol, you acknowledge that:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>AI is an automated system and may occasionally produce inaccurate, incomplete, or hallucinated information.</li>
             <li>Macro calculations and ingredient extractions are estimates and should not be relied upon for strict medical or allergy-related dietary tracking.</li>
             <li>AI-generated content is for lifestyle guidance and general wellness purposes and should not be used to manage chronic conditions, allergies, or acute medical needs.</li>
             <li>You are responsible for reviewing and verifying AI-generated advice before acting upon it.</li>
             <li>AI-generated Protocol targets are lifestyle suggestions only. They do not account for your complete medical history and must not replace the advice of a qualified healthcare provider.</li>
+            <li>Document Scanner biomarker extraction is automated and may misread values, units, or reference ranges. Always verify extracted data against your original report. Flair Health is not liable for clinical decisions based on AI-extracted biomarker data.</li>
+            <li>AI inference may be performed by multiple third-party providers (currently Google Gemini and xAI Grok). Provider selection is automatic and based on service availability.</li>
           </ul>
         </section>
         <section>

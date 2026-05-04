@@ -2,7 +2,7 @@ export default function PrivacyPolicy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: April 24, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: May 4, 2026</p>
       <p className="mb-4">Flair Health is a product of Regal Pines Pte. Ltd., a company incorporated in Singapore. References to &quot;Flair,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot; refer to Regal Pines Pte. Ltd.</p>
       <p className="mb-8">Flair is a local-first wellness app. This policy explains what data leaves your device, when, and why — and what we cannot do with it even if we wanted to.</p>
       <div className="space-y-8">
@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
             <li>Your journal entries, habits, scores, and AI insights live only on your device.</li>
             <li>We do not have a backend database for your personal data.</li>
             <li>We do not sell, share, or monetize your information.</li>
-            <li>The only exception is when you explicitly invoke an AI feature (Level Up, Magic Lens). See Section 4.</li>
+            <li>The only exception is when you explicitly invoke an AI feature (Level Up, Magic Lens, Eat Now, Document Scanner, or the Blueprint Protocol). Each feature requires your explicit approval via an in-app consent prompt before any data is transmitted. See Section 4.</li>
             <li>A randomly-generated, non-identifiable token is included with AI requests solely for rate-limiting. It is not linked to you, your device, or your health data.</li>
           </ul>
         </section>
@@ -38,13 +38,19 @@ export default function PrivacyPolicy() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">4. Artificial Intelligence &amp; Ephemeral Data Processing</h2>
-          <p className="mb-2">Features like &quot;Level Up&quot; and &quot;Magic Lens&quot; use Google Gemini AI to generate insights.</p>
+          <p className="mb-2">Flair includes several AI-powered features. Each feature requires your explicit in-app consent before any data leaves your device.</p>
           <ul className="list-disc pl-6 space-y-1">
-            <li><strong>In-Transit Processing:</strong> When you trigger Level Up, a structured summary of your day&apos;s journal entries, anonymous health profile buckets (age range, sex, BMI category), your stated health objective, and your active wellness protocol targets are sent to our serverless routing layer over HTTPS. For Magic Lens, a compressed copy of your meal photo is sent. No names, exact biometrics, or account identifiers are transmitted.</li>
-            <li><strong>No Persistence:</strong> Our routing layer processes this data in memory and does not log, store, or retain it. AI inference is performed via Google&apos;s Gemini API and is subject to Google&apos;s API Terms of Service. We do not share personally identifiable information with Google.</li>
-            <li><strong>No Training:</strong> Your data is not used by our routing layer to train any model. Google&apos;s own data handling is governed by their API Terms linked above.</li>
-            <li><strong>Anonymous Telemetry:</strong> AI requests include a hardware-derived anonymous identifier (not linked to any personal information) used only for aggregate diagnostics. This cannot be used to identify you.</li>
-            <li><strong>Sensitive Medical Context:</strong> If you optionally provide medical conditions (such as diabetes, kidney or liver conditions, or injuries) or fasting states, this information is kept strictly on your device and transmitted to the AI ephemerally solely to ensure that generated protocols do not suggest activities that could be harmful to you. This data is never stored on our servers, never retained after your request is processed, and is treated as sensitive health data under applicable law.</li>
+            <li><strong>Level Up</strong> sends a structured summary of your day&apos;s journal entries, anonymous health profile buckets (age range, sex, BMI category), your stated health objective, and your active wellness protocol targets to our serverless routing layer over HTTPS. No names, exact biometrics, or account identifiers are transmitted.</li>
+            <li><strong>Magic Lens</strong> sends a compressed copy of your meal photo for nutritional analysis. No metadata, location, or identifying information from the photo is transmitted.</li>
+            <li><strong>Eat Now</strong> sends your restaurant name, approximate location (street or mall), country, and meal intention alongside your anonymous health profile to generate personalised meal recommendations. No names, exact biometrics, or account identifiers are transmitted.</li>
+            <li><strong>Document Scanner</strong> processes your health report photo entirely on-device using optical character recognition (OCR). Personal identifiers (names, dates of birth, ID numbers) are stripped locally before any text leaves your device. Only the anonymised, redacted clinical text is sent to our routing layer for biomarker extraction. The original photo is never stored by Flair and never transmitted to any server.</li>
+            <li><strong>Blueprint Protocol</strong> sends your anonymous health profile and stated health objective to generate a personalised wellness protocol. No names, exact biometrics, or account identifiers are transmitted.</li>
+            <li><strong>AI Providers:</strong> AI inference is performed via Google&apos;s Gemini API or xAI&apos;s Grok API, selected automatically by our routing layer based on availability. Both providers process data ephemerally under their respective API terms of service. We do not share personally identifiable information with either provider.</li>
+            <li><strong>No Persistence:</strong> Our routing layer processes data in memory and does not log, store, or retain it after your request is complete.</li>
+            <li><strong>No Training:</strong> Your data is not used by our routing layer or by any AI provider to train models.</li>
+            <li><strong>Anonymous Telemetry:</strong> AI requests include a hardware-derived anonymous identifier (not linked to any personal information) used only for aggregate diagnostics and cost analysis. This cannot be used to identify you.</li>
+            <li><strong>Sensitive Medical Context:</strong> If you optionally provide medical conditions (such as diabetes, kidney or liver conditions, or injuries) or fasting states, this information is transmitted to the AI ephemerally solely to ensure that generated recommendations do not suggest activities that could be harmful to you. This data is never stored on our servers, never retained after your request is processed, and is treated as sensitive health data under applicable law.</li>
+            <li><strong>In-App Consent:</strong> Before any AI feature transmits data for the first time, Flair displays a consent prompt disclosing the service, purpose, and data involved. You may approve or reject each feature independently. Your preference is stored locally and can be changed at any time in Settings.</li>
           </ul>
         </section>
         <section>
