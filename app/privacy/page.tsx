@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
             <li>Your journal entries, habits, scores, and AI insights live only on your device.</li>
             <li>We do not have a backend database for your personal data.</li>
             <li>We do not sell, share, or monetize your information.</li>
-            <li>The only exception is when you explicitly invoke an AI feature (Level Up, Magic Lens, Eat Now, Document Scanner, Bio Age, or the Blueprint Protocol). Each feature requires your explicit approval via an in-app consent prompt before any data is transmitted. See Section 4.</li>
+            <li>The only exception is when you explicitly invoke an AI feature (Level Up, Magic Lens, Eat Now, Document Scanner, Bio Age, or the Blueprint Protocol). Each feature requires your explicit approval via an in-app consent prompt before any data is transmitted. See Section 4. Flair makes no network request on app launch — the first server contact only occurs when you actively use an AI feature and have provided explicit consent.</li>
             <li>A randomly-generated, non-identifiable token is included with AI requests solely for rate-limiting. It is not linked to you, your device, or your health data.</li>
           </ul>
         </section>
