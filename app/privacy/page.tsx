@@ -2,7 +2,7 @@ export default function PrivacyPolicy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: May 19, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: May 25, 2026</p>
       <p className="mb-4">Flair Health is a product of Regal Pines Pte. Ltd., a company incorporated in Singapore. References to &quot;Flair,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot; refer to Regal Pines Pte. Ltd.</p>
       <p className="mb-8">Flair is a local-first wellness app. This policy explains what data leaves your device, when, and why — and what we cannot do with it even if we wanted to.</p>
       <div className="space-y-8">
@@ -17,6 +17,8 @@ export default function PrivacyPolicy() {
             <li>The only exception is when you explicitly invoke an AI feature (Level Up, Magic Lens, Eat Now, Document Scanner, Bio Age, or the Blueprint Protocol). Each feature requires your explicit approval via an in-app consent prompt before any data is transmitted. See Section 4. Flair makes no network request on app launch — the first server contact only occurs when you actively use an AI feature and have provided explicit consent.</li>
             <li>A randomly-generated, non-identifiable token is included with AI requests solely for rate-limiting. It is not linked to you, your device, or your health data.</li>
           </ul>
+          <p className="mt-3"><strong>Smart Habits:</strong> Flair learns your recurring wellness patterns (such as meals, supplements, or workouts) by analysing the timing and content of your journal entries. This analysis is performed entirely on your device. No habit data, patterns, or predictions are transmitted to any server. You can confirm or dismiss any predicted entry, and patterns that are consistently dismissed are automatically deactivated.</p>
+          <p className="mt-3"><strong>Voice Input:</strong> Flair offers optional speech-to-text input for journal entries. Speech recognition is performed by your device&apos;s operating system (Apple Speech Recognition). Flair does not record, store, or transmit audio. On newer devices, speech recognition is processed entirely on-device. On older devices, your operating system may send audio to Apple for processing under Apple&apos;s own privacy policy.</p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">2. Local Encryption &amp; Ownership (&quot;The Sovereign&quot;)</h2>
