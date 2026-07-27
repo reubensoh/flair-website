@@ -52,13 +52,13 @@ export default function TermsOfService() {
           <h2 className="text-2xl font-semibold mb-3">5. Third-Party AI Services</h2>
           <p className="mb-2">By using AI-powered features, you acknowledge that your data may be processed by third-party AI providers. The providers currently in use are:</p>
           <ul className="list-disc pl-6 space-y-1 mb-3">
-            <li><strong>Google Gemini</strong></li>
+            <li><strong>Google Cloud Vertex AI</strong></li>
             <li><strong>OpenAI GPT-4.1-mini and GPT-4.1</strong></li>
             <li><strong>Anthropic Claude</strong></li>
           </ul>
           <p className="mb-2">Your use of AI features constitutes acceptance of the applicable provider&apos;s terms of service:</p>
           <ul className="list-disc pl-6 space-y-1 mb-3">
-            <li><a href="https://ai.google.dev/gemini-api/terms" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Google Gemini API Terms of Service</a></li>
+            <li><a href="https://cloud.google.com/terms" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Google Cloud Terms of Service</a></li>
             <li><a href="https://openai.com/policies/terms-of-use/" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">OpenAI Terms of Use</a></li>
             <li><a href="https://www.anthropic.com/legal/commercial-terms" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Anthropic Commercial Terms of Service</a></li>
           </ul>
