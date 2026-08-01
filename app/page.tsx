@@ -15,7 +15,7 @@ export default function Home() {
               Flair Health
             </h1>
             <p className="text-sm text-[#201E4B]/50 dark:text-[#ECE9E7]/50 leading-relaxed max-w-[220px]">
-              Private, offline-first, and powered by AI.
+              Privacy-first, offline-first, and powered by AI.
             </p>
           </div>
         </div>
