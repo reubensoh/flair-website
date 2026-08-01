@@ -2,7 +2,7 @@ export default function TermsOfService() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Terms of Service</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: July 27, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: August 1, 2026</p>
       <p className="mb-8">Flair Health is a product of Regal Pines Pte. Ltd. (Singapore). By downloading, accessing, or using the Flair Health mobile application (&quot;App&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, please do not use the App.</p>
       <div className="space-y-8">
         <section>
@@ -53,12 +53,14 @@ export default function TermsOfService() {
           <p className="mb-2">By using AI-powered features, you acknowledge that your data may be processed by third-party AI providers. The providers currently in use are:</p>
           <ul className="list-disc pl-6 space-y-1 mb-3">
             <li><strong>Google Cloud Vertex AI</strong></li>
+            <li><strong>Mistral AI</strong></li>
             <li><strong>OpenAI GPT-4.1-mini and GPT-4.1</strong></li>
             <li><strong>Anthropic Claude</strong></li>
           </ul>
           <p className="mb-2">Your use of AI features constitutes acceptance of the applicable provider&apos;s terms of service:</p>
           <ul className="list-disc pl-6 space-y-1 mb-3">
             <li><a href="https://cloud.google.com/terms" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Google Cloud Terms of Service</a></li>
+            <li><a href="https://legal.mistral.ai/terms/commercial-terms-of-service" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Mistral AI Commercial Terms of Service</a></li>
             <li><a href="https://openai.com/policies/terms-of-use/" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">OpenAI Terms of Use</a></li>
             <li><a href="https://www.anthropic.com/legal/commercial-terms" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Anthropic Commercial Terms of Service</a></li>
           </ul>
