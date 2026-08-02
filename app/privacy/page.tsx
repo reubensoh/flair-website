@@ -127,6 +127,7 @@ export default function PrivacyPolicy() {
           <ul className="list-disc pl-6 space-y-1">
             <li><strong>Latency Estimates:</strong> The endpoint <code>api.flairhealth.app/api/stats</code> provides latency estimates used for progress bars during AI requests. This endpoint receives only a feature identifier. It is stateless: no user data is sent, retained, or logged.</li>
             <li><strong>Weekly Report:</strong> The endpoint <code>api.flairhealth.app/api/weekly-report</code> generates an AI-powered 7-day lifestyle summary. See Section 5 for the data fields transmitted.</li>
+            <li><strong>IP Address:</strong> AI providers never see your IP address; requests are routed through our server. Our server sees your IP address in transit, as every server does. The only application-layer use is a one-way cryptographic hash of it, held for about two minutes, solely to prevent abuse (rate limiting): never the raw IP, never linked to your identity beyond that window, never used to profile you, and never stored in any database. Our hosting provider&apos;s own infrastructure logs are bounded by their published retention policy, which we do not control and cannot shorten.</li>
           </ul>
           <p className="mt-3">Health Wallet makes zero network calls. All wallet computation is performed entirely on-device.</p>
         </section>
@@ -168,6 +169,7 @@ export default function PrivacyPolicy() {
           <ul className="list-disc pl-6 space-y-1">
             <li>For data protection enquiries, contact: <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a></li>
             <li>Data Protection Officer: Regal Pines Pte. Ltd.</li>
+            <li><strong>Right to Complain:</strong> You may lodge a complaint with the Personal Data Protection Commission (PDPC) if you believe your personal data has not been handled in accordance with the PDPA. Contact: <a href="https://www.pdpc.gov.sg/" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">https://www.pdpc.gov.sg/</a></li>
           </ul>
         </section>
         <section>
