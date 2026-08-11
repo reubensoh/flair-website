@@ -2,12 +2,14 @@ export default function TermsOfService() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Terms of Service</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: August 2, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: August 12, 2026</p>
       <p className="mb-8">Flair Health is a product of Regal Pines Pte. Ltd. (Singapore). By downloading, accessing, or using the Flair Health mobile application (&quot;App&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, please do not use the App.</p>
       <div className="space-y-8">
         <section>
           <h2 className="text-2xl font-semibold mb-3">1. Eligibility</h2>
-          <p>You must be at least 13 years of age (or the minimum legal age in your jurisdiction) to use Flair Health. If you are under 13 in the United States, you may not use the App. In jurisdictions where a different minimum age applies, you must meet that minimum age to use the App.</p>
+          <p className="mb-2">You must be at least 13 years of age (or the minimum legal age in your jurisdiction) to use Flair Health. If you are under 13 in the United States, you may not use the App. In jurisdictions where a different minimum age applies, you must meet that minimum age to use the App.</p>
+          <p className="mb-2">Features that use artificial intelligence are available only to users aged 18 and over. Users aged 13 to 17 can use Flair&apos;s on-device features, including the Health Passport, journaling, and habit tracking. Features that depend on AI-generated content are not available to them.</p>
+          <p>Flair records your birth year, not your full date of birth. Eligibility is therefore determined conservatively, which means some users become eligible in the calendar year following their eighteenth birthday.</p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">2. Not Medical Advice</h2>
@@ -16,7 +18,7 @@ export default function TermsOfService() {
           <ul className="list-disc pl-6 space-y-1">
             <li><strong>Body Age</strong> is an algorithmic estimate based on self-reported and device-imported data. It is not a clinical measurement. Actual biological age cannot be determined without clinical laboratory testing.</li>
             <li><strong>Health Wallet</strong> projections are population-level estimates derived from epidemiological data. They are not personalised medical or financial predictions.</li>
-            <li><strong>AI recommendations</strong> (including Level Up, Eat Now, and Inspire Me) are informational and motivational in nature. They do not constitute medical advice.</li>
+            <li><strong>AI recommendations</strong> (including Refresh Insights, Eat Now, and Inspire Me) are informational and motivational in nature. They do not constitute medical advice.</li>
             <li><strong>Daily Quests</strong> goals are motivational lifestyle suggestions. They are not treatment plans, exercise prescriptions, or dietary regimens.</li>
             <li><strong>Document Scanner</strong> biomarker extraction is automated and may contain errors, including misread values, units, or reference ranges. Always verify extracted data against your original report.</li>
             <li>You should <strong>consult qualified healthcare professionals</strong> for all medical decisions. No feature of the App is intended to replace the judgement of a licensed medical provider.</li>
@@ -32,7 +34,7 @@ export default function TermsOfService() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">4. Artificial Intelligence Features</h2>
-          <p className="mb-2">By using features like &quot;Level Up,&quot; &quot;Magic Lens,&quot; &quot;Eat Now,&quot; &quot;Document Scanner,&quot; &quot;Body Age,&quot; &quot;Inspire Me,&quot; &quot;Weekly Report,&quot; and Daily Quests, you acknowledge that:</p>
+          <p className="mb-2">By using features like &quot;Refresh Insights,&quot; &quot;Magic Lens,&quot; &quot;Eat Now,&quot; &quot;Document Scanner,&quot; &quot;Body Age,&quot; &quot;Inspire Me,&quot; &quot;Weekly Report,&quot; &quot;Do Now,&quot; and Daily Quests, you acknowledge that:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>AI is an automated system and may occasionally produce inaccurate, incomplete, or hallucinated information.</li>
             <li>Macro calculations and ingredient extractions are estimates and should not be relied upon for strict medical or allergy-related dietary tracking.</li>
