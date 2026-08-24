@@ -2,7 +2,7 @@ export default function TermsOfService() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Terms of Service</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Last Updated: August 22, 2026</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 35. Last Updated: August 22, 2026.</p>
       <p className="mb-8">Flair Health is a product of Regal Pines Pte. Ltd. (Singapore). By downloading, accessing, or using the Flair Health mobile application (&quot;App&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, please do not use the App.</p>
       <div className="space-y-8">
         <section>
