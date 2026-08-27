@@ -146,7 +146,7 @@ change to this system, not only the ones already listed.
 | 35 | 2026-08-22 | Privacy, Terms | Privacy S1, S5, S9; Terms S4 | Split telemetry retention into Flair's own store versus the hosting provider's runtime logs; disclosed the Do Now energy level field; disclosed the Eat Now venue lookup processors (Hot Pepper Gourmet, Foursquare); corrected the Section 1 token bullet to reference Section 5; corrected the remaining Google Gemini citations. | `24efe17` |
 | 36 | 2026-08-23 | Privacy | S1 | Corrected the Voice Input paragraph: on device speech recognition is a hard requirement with no fallback, replacing language that had accurately, at the time, disclosed a since removed fallback risk. | `8c360e6` |
 | 37 | 2026-08-25 | Privacy, Terms | Privacy S1, S5, S8; Terms S4 | Renamed "Weekly Report" to "Weekly Wrapped" throughout, matching the name used in the app's own UI. First entry logged under the instrumentation test: a rename a user cannot map to the feature in front of them changes how a disclosure functions, so it consumes a version rather than counting as instrumentation. The internal identifier (consent contract id `weekly_report`, the `/api/weekly-report` endpoint path) is unchanged; only prose renamed. | `94143d7` |
-| 38 | 2026-08-25 (pending; confirm at merge) | Privacy | S5 | Added injuries and mobility limitations, and ongoing medications and supplements, to the Body Age input list. Body Age did not previously receive either. Medications are named explicitly rather than folded into "lifestyle factors" because they disclose conditions by inference and a reader should see them. Shipping with a paired mobile consent change (item 383); no Terms change, S4 does not enumerate Body Age's inputs. | `<pending>` |
+| 38 | 2026-08-28 | Privacy | S5 | Added injuries and mobility limitations, and ongoing medications and supplements, to the Body Age input list. Body Age did not previously receive either. Medications are named explicitly rather than folded into "lifestyle factors" because they disclose conditions by inference and a reader should see them. Shipped with the paired mobile consent change (item 383), same day, per the lawyer's three-in-one rule; no Terms change, S4 does not enumerate Body Age's inputs. Drafted and pushed 2026-08-25, held for the mobile side, went live 2026-08-28; see note below the table. | `b2c588c` |
 
 ---
 
@@ -159,6 +159,20 @@ collection, use, disclosure, retention, or user rights.
 | Date | Document(s) | Change | Commit |
 |---|---|---|---|
 | 2026-08-24 | Privacy, Terms | Added the "Version N. Last Updated: \<date\>." line to both pages, and this change log itself. Introduces the versioning system; asserts no new fact about data handling. | `46d3cb2` |
+
+## Note on Version 38
+
+Drafted, verified against the mobile codebase, and pushed to a branch on
+2026-08-25, deliberately not merged: this change was required to ship in
+the same release as a paired mobile consent change (item 383), and that
+mobile side was not yet confirmed to be merging. Rather than guess a
+go-live date at draft time, the changelog row and the page's own "Last
+Updated" line were left explicitly marked pending. Confirmation that the
+mobile side was ready arrived 2026-08-28, three days later, at which point
+this row's date, the page's "Last Updated" line, and the `policy-v38` tag
+were all filled in against the actual day of merge, verified via `date`
+immediately beforehand. Had the date been guessed at draft time instead, it
+would have been wrong by three days.
 
 ## Note on Versions 31 and 32
 

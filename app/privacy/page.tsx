@@ -2,7 +2,7 @@ export default function PrivacyPolicy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 38. Last Updated: August 25, 2026.</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 38. Last Updated: August 28, 2026.</p>
       <p className="mb-4">Flair Health is a product of Regal Pines Pte. Ltd., a company incorporated in Singapore. References to &quot;Flair,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot; refer to Regal Pines Pte. Ltd.</p>
       <p className="mb-8">Flair is a local-first wellness app, privacy-first until we can verifiably be more. This policy explains what data leaves your device, when, and why.</p>
       <div className="space-y-8">
