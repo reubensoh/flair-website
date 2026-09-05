@@ -161,6 +161,7 @@ collection, use, disclosure, retention, or user rights.
 | Date | Document(s) | Change | Commit |
 |---|---|---|---|
 | 2026-08-24 | Privacy, Terms | Added the "Version N. Last Updated: \<date\>." line to both pages, and this change log itself. Introduces the versioning system; asserts no new fact about data handling. | `46d3cb2` |
+| 2026-09-06 | Privacy, Terms | American spelling sweep (item 524), public pages only: analysing/analyses (verb)->analyzing/analyzes, behavioural/behaviours->behavioral/behaviors, personalised->personalized, anonymised->anonymized. Ruled editorial by the lawyer; asserts no new fact about data handling. Historical entries in this log are unaffected. | `e82a2d2` |
 
 ## Note on Version 38
 
