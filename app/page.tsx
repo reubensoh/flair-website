@@ -84,8 +84,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
 
           <form method="post" action="/api/beta" className="flex flex-col gap-5">
             <input type="hidden" name="t" value={token} />
-            <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
-              <input type="text" name="hp_ref" tabIndex={-1} autoComplete="off" defaultValue="" />
+            <div aria-hidden="true" inert style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
+              <input type="text" name="hp_ref" aria-hidden="true" tabIndex={-1} autoComplete="off" defaultValue="" />
             </div>
 
             <div>

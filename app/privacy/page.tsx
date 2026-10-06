@@ -201,6 +201,10 @@ export default function PrivacyPolicy() {
           <p className="mb-3"><strong>Your row is not in the app.</strong> The email you give us here is never added to the app, never linked to anything you write in Flair, and never sent to an AI provider.</p>
           <p><strong>How to be removed.</strong> Email <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a> from the address you gave us. We delete your row, and if you have already been invited we remove you from TestFlight. You can also ask us what we hold about you, and we will tell you.</p>
         </section>
+        <section>
+          <h2 className="text-2xl font-semibold mb-3">What Changed</h2>
+          <p><strong>Version 43, October 2026.</strong> Added section 16, the beta list: what the sign-up form asks for, why, who holds it, how long it is kept and how to be removed. Section 14 is rescoped, because the app collects no email address and the beta list does. In section 1, &quot;We do not sell, share, or monetize your information&quot; is replaced by &quot;We do not sell your information, rent it, or use it for advertising&quot;: the word &quot;share&quot; was inaccurate, because sections 5 and 9 of this policy have always described data going to AI providers and environment services with your consent, and the beta list is held for us by Google.</p>
+        </section>
         <p className="mt-8 italic text-gray-500 dark:text-gray-400">We may update this policy. Material changes will be announced in-app on your next launch. The date at the top of this page always reflects the current version.</p>
       </div>
     </main>
