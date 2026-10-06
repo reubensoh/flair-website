@@ -33,6 +33,11 @@ If any variable is missing the page still loads, and every submission is rejecte
 
 A hidden trap field, a signed token that must be at least 3 seconds and at most 6 hours old, an 8 KB body cap, strict field validation, and dedupe on email. Per-IP rate limiting is not built; it needs either a Vercel Firewall rule (plan-dependent) or a data store.
 
+## Operating controls
+
+- No row is emailed until the PO approves it by hand.
+- An unapproved row is deleted, never kept.
+
 ## Removing someone
 
-Delete their row in the Sheet. Retention and the removal route belong in the privacy policy's beta-list section (counsel's, not yet written) and in the line under the tick box.
+Delete their row in the Sheet, and remove any TestFlight invite. People ask by emailing support@flairhealth.app from the address they gave. Retention and the removal route are stated in the privacy policy's section 16 and in the line under the tick box.

@@ -10,8 +10,7 @@ export const SOURCES = [
 
 export const CONSENT_TEXT = "I am 18 or older, and I agree to be emailed about the beta.";
 
-// Placeholder until counsel supplies the removal-route wording; never ship this string.
-export const REMOVAL_LINE = "[Removal route wording pending counsel.]";
+export const REMOVAL_LINE = "To leave the list, email support@flairhealth.app from the address you gave us, and we delete your row.";
 
 // Derived from the visible text, so the stored version cannot drift from what the person saw.
 export function consentVersion(): string {

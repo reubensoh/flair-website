@@ -2,7 +2,7 @@ export default function PrivacyPolicy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 42. Last Updated: September 7, 2026.</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 43. Last Updated: pending, confirm at merge.</p>
       <p className="mb-4">Flair Health is a product of Regal Pines Pte. Ltd., a company incorporated in Singapore. References to &quot;Flair,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot; refer to Regal Pines Pte. Ltd.</p>
       <p className="mb-8">Flair is a local-first wellness app, privacy-first until we can verifiably be more. This policy explains what data leaves your device, when, and why.</p>
       <div className="space-y-8">
@@ -10,10 +10,10 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-semibold mb-3">1. No Cloud, No Accounts, No Tracking</h2>
           <p className="mb-2">Flair is fully offline-first.</p>
           <ul className="list-disc pl-6 space-y-1">
-            <li>We never require an account, email, or phone number.</li>
+            <li>We never require an account, email, or phone number to use Flair. The beta list on this website is the one place we ask for an email, and section 16 says what happens to it.</li>
             <li>Your journal entries, habits, scores, and AI insights live only on your device.</li>
             <li>We do not have a backend database for your personal data.</li>
-            <li>We do not sell, share, or monetize your information.</li>
+            <li>We do not sell your information, rent it, or use it for advertising.</li>
             <li>The only exception is when you explicitly invoke an AI feature (Refresh Insights, Magic Lens, Eat Now, Document Scanner, Body Age, Daily Quests, Inspire Me, Do Now, or Weekly Wrapped). Each feature requires your explicit approval via an in-app consent prompt before any data is transmitted. See Section 5. Flair makes no network request on app launch. The first server contact only occurs when you actively use an AI feature and have provided explicit consent.</li>
             <li>A pseudonymous identifier, generated on your device and rotating daily, is included with AI requests. It is not derived from any device or account identifier, and it is never forwarded to an AI provider. Section 5 describes what it is used for and what is retained alongside it.</li>
           </ul>
@@ -182,7 +182,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-semibold mb-3">14. Children&apos;s Privacy</h2>
           <p className="mb-3">Flair Health is not directed at children under the age of 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect personal information from children under 13 in the United States or under the relevant minimum age elsewhere.</p>
-          <p className="mb-3">Our App Store age rating is 13+ in most markets. We do not require account creation, and we do not collect names, email addresses, or other identifying information from any user.</p>
+          <p className="mb-3">Our App Store age rating is 13+ in most markets. We do not require account creation, and the app collects no names, email addresses or other identifying information. The beta list on our website is the one exception, and it is described in section 16. To ask to join it you confirm that you are 18 or older.</p>
           <p className="mb-3">If we become aware that we have inadvertently received personal information from a child under the applicable minimum age, we will promptly delete that information and, where required by law, notify the child&apos;s parent or guardian.</p>
           <p className="mb-3">If you are a parent or guardian and believe your child has provided personal information to Flair Health, please contact us at <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a>. We will investigate and delete the data promptly.</p>
           <p>Flair asks for your birth year during setup. It is stored on your device and is never transmitted as a date. It is used for two purposes: to determine whether AI features are available to you, and, if you use Body Age, to calculate a biological age estimate. Features that use artificial intelligence require you to be 18 or over.</p>
@@ -190,6 +190,16 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-semibold mb-3">15. Contact Us</h2>
           <p>Questions? Reach out at <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a>.</p>
+        </section>
+        <section>
+          <h2 className="text-2xl font-semibold mb-3">16. The Beta List</h2>
+          <p className="mb-3">Flair&apos;s app has no accounts and asks for no email. The beta list is the one place Flair asks for one, and it lives on this website rather than in the app.</p>
+          <p className="mb-3"><strong>What we ask for.</strong> Your email address; your country; where you found Flair; a social handle, if you choose to give one; and your confirmation that you are 18 or older and agree to be emailed about the beta. We record the date you asked and the wording of the consent you were shown, so that both of us can see later what you agreed to. We do not ask about your health, your goals or any condition, and we do not store your IP address.</p>
+          <p className="mb-3"><strong>Why we ask.</strong> To invite testers in small groups, and to decide whom to invite first. Your country tells us that; where you found Flair tells us which group you came from. Nothing on this list is used for advertising, and nothing on it is sold or rented.</p>
+          <p className="mb-3"><strong>Who holds it.</strong> Regal Pines Pte. Ltd. holds the list in a spreadsheet in its own Google Workspace. Google processes it on our behalf under our agreement with them, and it may be stored on servers outside Singapore under the protections in that agreement. When we invite you, Apple holds your email address for as long as the TestFlight invitation needs it, under Apple&apos;s own terms.</p>
+          <p className="mb-3"><strong>How long we keep it.</strong> We keep your row until the beta ends or until you ask us to remove it, and we delete the list within three months of the beta ending.</p>
+          <p className="mb-3"><strong>Your row is not in the app.</strong> The email you give us here is never added to the app, never linked to anything you write in Flair, and never sent to an AI provider.</p>
+          <p><strong>How to be removed.</strong> Email <a href="mailto:support@flairhealth.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@flairhealth.app</a> from the address you gave us. We delete your row, and if you have already been invited we remove you from TestFlight. You can also ask us what we hold about you, and we will tell you.</p>
         </section>
         <p className="mt-8 italic text-gray-500 dark:text-gray-400">We may update this policy. Material changes will be announced in-app on your next launch. The date at the top of this page always reflects the current version.</p>
       </div>
