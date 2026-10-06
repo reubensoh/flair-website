@@ -14,7 +14,7 @@ export default function BetaThanks() {
           You&apos;re on the list.
         </h1>
         <p className="text-base text-[#201E4B]/70 dark:text-[#ECE9E7]/70 leading-relaxed">
-          Invitations go out in small groups through TestFlight, and the email comes from Flair.
+          Invitations go out in small groups. The TestFlight invitation arrives from Apple. Anything from us comes from support@flairhealth.app.
         </p>
         <Link href="/" className="text-sm text-[#9156F1] underline underline-offset-4">
           Back to Flair Health
