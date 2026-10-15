@@ -10,7 +10,7 @@ import "./_landing/landing.css";
 
 export const metadata: Metadata = {
   title: "Flair Health",
-  description: APPROVED.subtitle,
+  description: APPROVED.metaDescription,
 };
 
 const NOTICES: Record<string, string> = {
@@ -269,7 +269,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" strokeWidth="1.8" /><path d="M8 10.5V16M8 7.6v.1M11.5 16v-3.2c0-1.4.9-2.3 2.1-2.3s2 .9 2 2.3V16M11.5 10.5V16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
             </span>
           </div>
-          <p className="lp-footer-copy">© 2026 Regal Pines Pte. Ltd.</p>
+          <p className="lp-footer-copy">© {new Date().getFullYear()} Regal Pines Pte. Ltd. All rights reserved.</p>
           <a href="#top" className="lp-footer-top">Back to top</a>
         </div>
       </footer>

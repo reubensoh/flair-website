@@ -6,6 +6,8 @@ export const APPROVED = {
   subtitle:
     "Flair reads what you tell it about your days and shows you the patterns. Your journal is encrypted on your phone.",
   cta: "Ask to join the beta",
+  // Counsel, 16 Oct 2026 (docs/legal/2026-10-16-counsel-live-site-hotfix-subtitle-meta-footer-offline.md).
+  metaDescription: "A personal health journal. Your health data is kept on your phone. When you send any of it to AI, you get a receipt.",
   proof1: "Type it, say it to Siri, or take a photo of your meal. Flair reads it.",
   proof2:
     "It connects your food, sleep, movement and mood and shows you the patterns: an energy forecast for the day, your eating windows, your habits.",
