@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
       <div className="space-y-8">
         <section>
           <h2 className="text-2xl font-semibold mb-3">1. No Cloud, No Accounts, No Tracking</h2>
-          <p className="mb-2">Flair is fully offline-first.</p>
+          <p className="mb-2">Flair keeps your data on your device and works without a connection, except for the features that need one: the AI features, Local Conditions and route maps.</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>We never require an account, email, or phone number to use Flair. The beta list on this website is the one place we ask for an email, and section 16 says what happens to it.</li>
             <li>Your journal entries, habits, scores, and AI insights live only on your device.</li>
@@ -205,6 +205,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-semibold mb-3">What Changed</h2>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> A correction. In builds up to 49, four paths could request local weather and air quality data using your approximate location without the Local Conditions consent: an outdoor workout imported from Apple Health, that same import run by a background task, a pass back over workouts already on the phone, and the Outdoors answer on a workout. The statements in sections 1, 2, 5 and 9 that no data leaves your device without your per-feature consent did not hold for those paths. The fix checks that consent at a single point and fails closed if it cannot be read. No data beyond your position rounded to about a kilometre was involved, and nothing identifying you was sent to the weather services.</p>
+          <p className="mb-3"><strong>Version 43, October 2026.</strong> Removed &apos;fully offline-first&apos;; Flair needs a connection for its AI features, Local Conditions and route maps.</p>
           <p><strong>Version 43, October 2026.</strong> Added section 16, the beta list: what the sign-up form asks for, why, who holds it, how long it is kept and how to be removed. Section 14 is rescoped, because the app collects no email address and the beta list does. In section 1, &quot;We do not sell, share, or monetize your information&quot; is replaced by &quot;We do not sell your information, rent it, or use it for advertising&quot;: the word &quot;share&quot; was inaccurate, because sections 5 and 9 of this policy have always described data going to AI providers and environment services with your consent, and the beta list is held for us by Google.</p>
         </section>
         <p className="mt-8 italic text-gray-500 dark:text-gray-400">We may update this policy. Material changes will be announced in-app on your next launch. The date at the top of this page always reflects the current version.</p>
