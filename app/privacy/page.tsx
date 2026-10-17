@@ -109,7 +109,7 @@ export default function PrivacyPolicy() {
           <ul className="list-disc pl-6 space-y-1 mb-3">
             <li>Mindful Minutes</li>
           </ul>
-          <p className="mt-3">This data is pulled directly into your local journal and never leaves your device. We do not transmit raw health data to any server. We do not write to Apple Health or Google Health Connect. Workout route data (GPS), if synced, is stored only on your device and is never transmitted to our servers.</p>
+          <p className="mt-3">This data is pulled directly into your local journal and stored on your device. We do not transmit raw health data to any server. We do not write to Apple Health or Google Health Connect. Workout route data (GPS), if synced, is stored only on your device and is never transmitted to our servers.</p>
           <p className="mt-3">With your permission, Flair imports the data categories listed above from Apple Health. This data is stored locally on your device and is never transmitted to any server unless you explicitly invoke an AI feature that includes it (such as Body Age). Flair also reads which apps or wearable devices have written data to Apple Health (for example, Garmin Connect or Oura) to detect your connected devices. This information is stored locally and only the brand category (e.g. &quot;Garmin&quot;, &quot;Oura&quot;), not the device model or firmware version, is included in Refresh Insights requests with your explicit consent.</p>
         </section>
         <section>
@@ -147,7 +147,11 @@ export default function PrivacyPolicy() {
             <li><strong>Recruit Co., Ltd. (Hot Pepper Gourmet)</strong> (Japan): venue lookup for users in Japan (<a href="https://cdn.p.recruit.co.jp/terms/cmn-t-1001/index.html?p=pp035" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
           </ul>
           <p className="mb-2">Your exact location is never transmitted and no health data is included in these requests.</p>
-          <p>Flair may request &quot;Always&quot; location access to import workout GPS routes from Apple Health. Route data is stored locally on your device and is never transmitted to any server. You can choose &quot;While Using the App&quot; location access if you prefer not to import route data.</p>
+          <p className="mb-2">Flair may request &quot;Always&quot; location access to import workout GPS routes from Apple Health. Route data is stored only on your device and is never sent to Flair&apos;s servers. When you open a route map, your phone downloads map images from the OpenStreetMap Foundation, which receives your network address and the area the map shows, under its own privacy policy. No health data is sent. You can choose &quot;While Using the App&quot; location access if you prefer not to import route data.</p>
+          <p className="mb-2">Route maps load map images from:</p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li><strong>OpenStreetMap Foundation</strong> (United Kingdom): map images for route maps; it receives your network address and the area the map shows (<a href="https://osmfoundation.org/wiki/Privacy_Policy" className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
+          </ul>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">10. Crash Reports</h2>
@@ -206,6 +210,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-semibold mb-3">What Changed</h2>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> A correction. In builds up to 49, four paths could request local weather and air quality data using your approximate location without the Local Conditions consent: an outdoor workout imported from Apple Health, that same import run by a background task, a pass back over workouts already on the phone, and the Outdoors answer on a workout. The statements in sections 1, 2, 5 and 9 that no data leaves your device without your per-feature consent did not hold for those paths. The fix checks that consent at a single point and fails closed if it cannot be read. No data beyond your position rounded to about a kilometre was involved, and nothing identifying you was sent to the weather services.</p>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> Removed &apos;fully offline-first&apos;; Flair needs a connection for its AI features, Local Conditions and route maps.</p>
+          <p className="mb-3"><strong>Version 43, October 2026.</strong> Route maps load map images from OpenStreetMap, which receives your network address and the area shown; the earlier text said route data was never transmitted to any server.</p>
           <p><strong>Version 43, October 2026.</strong> Added section 16, the beta list: what the sign-up form asks for, why, who holds it, how long it is kept and how to be removed. Section 14 is rescoped, because the app collects no email address and the beta list does. In section 1, &quot;We do not sell, share, or monetize your information&quot; is replaced by &quot;We do not sell your information, rent it, or use it for advertising&quot;: the word &quot;share&quot; was inaccurate, because sections 5 and 9 of this policy have always described data going to AI providers and environment services with your consent, and the beta list is held for us by Google.</p>
         </section>
         <p className="mt-8 italic text-gray-500 dark:text-gray-400">We may update this policy. Material changes will be announced in-app on your next launch. The date at the top of this page always reflects the current version.</p>
