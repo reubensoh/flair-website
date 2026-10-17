@@ -15,7 +15,7 @@ export default function Home() {
               Flair Health
             </h1>
             <p className="text-sm text-[#201E4B]/50 dark:text-[#ECE9E7]/50 leading-relaxed max-w-[220px]">
-              Privacy-first, offline-first, and powered by AI.
+              Your health data is kept on your phone. When you send any of it to AI, you get a receipt.
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* Footer */}
         <p className="text-xs text-[#201E4B]/35 dark:text-[#ECE9E7]/35">
-          © {new Date().getFullYear()} Flair Health. All rights reserved.
+          © {new Date().getFullYear()} Regal Pines Pte. Ltd. All rights reserved.
         </p>
 
       </main>
