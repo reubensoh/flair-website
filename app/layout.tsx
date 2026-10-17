@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Flair Health",
-  description: "Your personal health journal. Private, offline-first, and powered by AI.",
+  description: "A personal health journal. Your health data is kept on your phone. When you send any of it to AI, you get a receipt.",
   icons: {
-    icon: "/launcher_icon.png",
-    apple: "/launcher_icon.png",
+    icon: "/icon-180.png",
+    apple: "/icon-180.png",
   },
 };
 
