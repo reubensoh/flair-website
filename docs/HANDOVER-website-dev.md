@@ -219,3 +219,59 @@ The design is in `docs/beta-form.md` on the beta branches.
 2. `git fetch`, then confirm the branch heads match section 6, and that live is still Version 42 (`curl -sL https://www.flairhealth.app/privacy | grep -o "Version [0-9]*"`).
 3. Read app repo `docs/plans/PRE-LAUNCH-REGISTER.md` rows 69, 77, 81 to 86 and 92.
 4. Tell the lead architect you are on, and raise items 1, 2 and 4 of section 11 (both dates, and the two §2 decisions).
+
+---
+
+## 14. Q&A with the incoming web dev (28 October 2026)
+
+Answers checked against the code on 28 Oct where marked "verified".
+
+1. **Build 50's TestFlight date:** not recorded in either repo. The docs only say "once build 50 is on TestFlight" (register 88). Cut commit `8e01bfba`, 24 Oct (round 738). The real date is in App Store Connect: ask the PO, or the architect's build 51 notes.
+2. **A standalone offline correction:** counsel's only words are in the 16 Oct file (`docs/legal/2026-10-16-counsel-live-site-hotfix-subtitle-meta-footer-offline.md`). It gives one sentence and one changelog row, and says the correction publishes "on its own, as its own version" if V43 misses the deadline. The same words serve a standalone version. Counsel's 16 Oct and 6 Oct files imply renumbering: the standalone becomes V43, today's draft V44, item 618's drafts V45. This was never discussed with counsel; raise it.
+3. **Mistral stays OUT.** The ruling of record is the architect's brief `docs/plans/briefs/2026-10-18/W-v43-where-data-processed-mistral-routes-apple.md` ("CORRECTION": counsel confirmed by message, 18 Oct around 17:2x). Register row 85 is stale (it still says "Mistral joins" and lists Recruit and Foursquare). Ask the architect to update row 85 and have counsel file the confirmation.
+4. **"anonymous health profile" (§5: Refresh, Eat Now, Daily Quests, Body Age):** nobody caught it, including me. No register row or counsel file covers it, and it is NOT fixed on the V43 branches. Counsel's own verbatim texts (the item 484 file) and item 618's V44 drafts use the phrase. §5's "rather than an anonymous count" is a correct, deliberate use. Raise it with counsel as a new finding.
+5. **The identifier is daily (verified).**
+   - App: `lib/services/preferences_service.dart:459`, `sha256(seed + localDate)`, rotating at local midnight.
+   - Router: `lib/telemetry.ts:49`, "a pseudonym that changes every day".
+   - The router's `CLAUDE.md:13` ("weekly-rotating") is stale, and the app's doc comment there says "anonymous client hash" (internal only).
+   - The policy says daily in §1 and §5.
+6. **Screenshots:** the Framer design has a phone on every step card, so `SCREENS` has four slots. The brief and the PO only commit to two (today, consent-sheet). Placeholders must never publish, so either the PO supplies the logging and patterns screens, or the architect agrees to remove the phone from steps 1 and 2.
+7. **Item 373 revert:** there is no revert file, only the 2026-09-03 file's instruction (restore "every", delete the interim sentences) and its rule that the revert consumes a version and a changelog row. No row words are given. "Third and fourth sentences" is no longer literal, because the PO's 7 Sep ruling kept two August sentences between. Delete the span after the JSX comment `Item 373 interim text below` in §2. Whether it rides in V43 is counsel's call.
+8. **Item 853:** the "A correction. In builds up to 49…" row doesn't mention the note, so its words are unaffected. Counsel's 6 Oct file wants the note's removal as its own changelog row, but gives no words. If V43 never publishes the note, counsel must say whether that row is still wanted, and supply it.
+9. **The What Changed rows assembled without counsel's words are NOT marked in the code and WOULD publish on merge:**
+   - Apple (`e730e7d`, widened `1d9ea91`);
+   - route recording (`1d9ea91`);
+   - §17 added (`1d9ea91`);
+   - venue removal (`cfb492b`).
+
+   They are flagged only in commit messages and reports, not in PR #1. Mark or list them before any merge. The §9 OSMF row was accepted by counsel on 18 Oct.
+10. **Function Region (verified):** never changed as far as I know. iad1 is Vercel's default. `/api/beta` exports no `runtime` or `preferredRegion`, there is no `vercel.json`, and `next.config.ts` holds only `experimental.inlineCss`. Nothing ties the form to iad1.
+11. **Beta form env vars:**
+    - The outgoing dev never had Vercel access.
+    - Names (from `docs/beta-form.md`): `GOOGLE_SA_EMAIL`, `GOOGLE_SA_PRIVATE_KEY`, `BETA_SHEET_ID`, `BETA_SHEET_TAB` (optional), `BETA_FORM_SECRET`. `BETA_TEST_*` stays unset.
+    - Preview was set against the TEST Sheet on 6 Oct (the PO's row and the recorded POST both landed).
+    - Production was never set, to my knowledge, and never tested end to end (`main` has no form). Plan a recorded POST on production right after publishing: a fake address, then delete the row.
+12. **Workspace and service account:** unknown; the PO created both. The Sheet is in the regal-pines.com Workspace (register 86). Which Google Cloud project holds the service account is unknown. If it is the "Flair Health" project, that project's Cloud CDPA (not accepted) also applies. Ask the PO.
+13. **The verbatim check:** there is no saved script; it was inline Python each time.
+    - Method: strip tags, unescape entities (`&apos;` etc.), drop `**`, collapse whitespace.
+    - Then take counsel's `> ` quote lines, assert each is a substring of the page, and assert the old text is gone.
+    - Worth committing as `scripts/check-verbatim.py`, with the architect's okay.
+14. **Open threads:**
+    - The architect told me to hold `1d9ea91`/`144d06a` until the dashboard answers came back. On 27 Oct, on the PO's instruction, I executed the 18 Oct §17 brief (`cfb492b`/`c7d6270`); the architect hasn't acknowledged it yet.
+    - The two §2 decisions (373, 853) were never sent to counsel.
+    - Counsel's read of the PROPOSED copy and the step 3 alternative ("later", per the architect).
+    - The PO's screenshots.
+    - The social handles (promised "by the weekend" on 14 Oct).
+
+    No other promises are outstanding.
+15. **PR #1** (written 14 Oct at `9366f50`) is stale.
+    - It lacks: all the V43 work merged since, the meta description and footer (`64aac60`), and the social placeholders.
+    - Its Lighthouse figures are for `9366f50`.
+    - The only comment is Vercel's bot and there are no reviews. That comment carries the stable branch preview address (`flair-website-git-web-landing-f-ba9560-reubensoh-5319s-projects.vercel.app`), which cannot be guessed because Vercel truncates and hashes long branch names.
+16. **More traps:**
+    - Sweep the WHOLE policy for must-not words, not just new copy (that is how "anonymous health profile" slipped through).
+    - List `docs/plans/briefs/*/W-*` regularly: a brief can be written but never pasted (the 18 Oct §17 brief sat unseen for nine days).
+    - When a brief's CORRECTION and a register row disagree, the brief is newer.
+    - Mark the words you assemble in the code, not just in commit messages.
+    - On macOS, `sed -i` needs `''`.
+17. **`origin/web/hotfix-subtitle-meta-footer-2026-10-16`:** keep it as history, like the `legal/*` branches. Deleting remote branches is the PO's call.
