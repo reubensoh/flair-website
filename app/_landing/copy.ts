@@ -24,9 +24,11 @@ export const APPROVED = {
     "Flair has no accounts. This email is for the beta list only. Flair reads it, invites you through TestFlight, and that is all it does. It is never in the app.",
 } as const;
 
-// PROPOSED: drafted for this design from docs/plans/2026-10-05-landing-page-what-we-can-say.md
-// (item numbers in brackets). NOT read by counsel. Nothing here may publish until counsel has read it.
-export const PROPOSED = {
+// DESIGN_COPY: drafted for this design from docs/plans/2026-10-05-landing-page-what-we-can-say.md
+// (item numbers in brackets). Counsel approved every string on 28 Oct 2026 (app repo
+// docs/legal/2026-10-28-counsel-second-batch-privacy-v43-landing-copy-hosting-and-afcd-cofid.md, W5).
+// Do not edit these strings without counsel.
+export const DESIGN_COPY = {
   howEyebrow: "How it works",
   howHeading: "Tell it your day. See the patterns.", // [1, 2]
   step1Title: "Log it in your own words.", // [1]

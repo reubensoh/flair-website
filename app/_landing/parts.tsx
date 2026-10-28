@@ -1,16 +1,4 @@
 import Image from "next/image";
-import type { ReactNode } from "react";
-
-const showMarkers = process.env.VERCEL_ENV !== "production";
-
-// Wraps every PROPOSED string. Off production it is underlined so the PO and counsel can see what is unread.
-export function Proposed({ children }: { children: ReactNode }) {
-  return (
-    <span data-proposed="" className={showMarkers ? "lp-proposed" : undefined} title={showMarkers ? "PROPOSED, not yet read by counsel" : undefined}>
-      {children}
-    </span>
-  );
-}
 
 // Grace's onboarding cat (app repo 3cd2fa2e), self-hosted in public/mascot/. Decorative, so hidden from screen readers.
 // ownership and first_entry have thin dark ground lines: keep them on light backgrounds only.

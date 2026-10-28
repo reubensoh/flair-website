@@ -38,13 +38,6 @@ html:has(.lp) body {
   text-decoration: none;
 }
 
-/* PROPOSED marker, off production only */
-.lp-proposed {
-  text-decoration: underline dashed rgba(145, 86, 241, 0.7);
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 0.18em;
-}
-
 /* ── Header ─────────────────────────────────────────── */
 .lp-header {
   position: fixed;
@@ -708,16 +701,19 @@ html:has(.lp) body {
   gap: 10px;
   margin-left: auto;
 }
-.lp-social span {
+.lp-social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 999px;
   color: var(--purple);
   background: #efe7fd;
-  opacity: 0.6;
+  transition: background-color 0.3s var(--ease);
+}
+.lp-social a:hover {
+  background: var(--line);
 }
 .lp-footer-copy {
   margin: 0;

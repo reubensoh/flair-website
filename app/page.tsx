@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { connection } from "next/server";
 import { CONSENT_TEXT, REMOVAL_LINE, SOURCES, countries, issueToken } from "../lib/beta";
-import { APPROVED, PROPOSED, SCREENS } from "./_landing/copy";
+import { APPROVED, DESIGN_COPY, SCREENS } from "./_landing/copy";
 import Motion from "./_landing/Motion";
-import { Mascot, Phone, Proposed } from "./_landing/parts";
+import { Mascot, Phone } from "./_landing/parts";
 import "./_landing/landing.css";
 
 export const metadata: Metadata = {
@@ -26,9 +26,9 @@ const NAV = [
 ];
 
 const STEPS = [
-  { title: PROPOSED.step1Title, body: APPROVED.proof1, screen: SCREENS.logging, screenLabel: "Logging", pose: "journal" },
-  { title: PROPOSED.step2Title, body: APPROVED.proof2, screen: SCREENS.patterns, screenLabel: "Patterns", pose: "intro" },
-  { title: PROPOSED.step3Title, body: APPROVED.proof4, screen: SCREENS.consent, screenLabel: "Consent sheet", pose: "ownership" },
+  { title: DESIGN_COPY.step1Title, body: APPROVED.proof1, screen: SCREENS.logging, screenLabel: "Logging", pose: "journal" },
+  { title: DESIGN_COPY.step2Title, body: APPROVED.proof2, screen: SCREENS.patterns, screenLabel: "Patterns", pose: "intro" },
+  { title: DESIGN_COPY.step3Title, body: APPROVED.proof4, screen: SCREENS.consent, screenLabel: "Consent sheet", pose: "ownership" },
 ] as const;
 
 function Accent({ parts }: { parts: readonly [string, string, string] | readonly string[] }) {
@@ -63,8 +63,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
   const token = issueToken();
 
   const features = [
-    { icon: icons.write, title: <Proposed>{PROPOSED.feature1Title}</Proposed>, body: APPROVED.proof1 },
-    { icon: icons.pattern, title: <Proposed>{PROPOSED.feature2Title}</Proposed>, body: APPROVED.proof2 },
+    { icon: icons.write, title: DESIGN_COPY.feature1Title, body: APPROVED.proof1 },
+    { icon: icons.pattern, title: DESIGN_COPY.feature2Title, body: APPROVED.proof2 },
     { icon: icons.wear, title: APPROVED.proof5Title, body: APPROVED.proof5Body },
   ];
 
@@ -123,8 +123,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
 
         <section id="how" className="lp-section">
           <div className="lp-section-head" data-reveal="">
-            <p className="lp-eyebrow"><span className="lp-eyebrow-icon" aria-hidden="true" /><Proposed>{PROPOSED.howEyebrow}</Proposed></p>
-            <h2 className="lp-h2"><Proposed>{PROPOSED.howHeading}</Proposed></h2>
+            <p className="lp-eyebrow"><span className="lp-eyebrow-icon" aria-hidden="true" />{DESIGN_COPY.howEyebrow}</p>
+            <h2 className="lp-h2">{DESIGN_COPY.howHeading}</h2>
           </div>
           <div className="lp-stack" data-stack="">
             {STEPS.map((s, i) => (
@@ -132,7 +132,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
                 <div className="lp-card-inner">
                   <div className="lp-card-text">
                     <p className="lp-step">Step 0{i + 1}</p>
-                    <h3 className="lp-h3"><Proposed>{s.title}</Proposed></h3>
+                    <h3 className="lp-h3">{s.title}</h3>
                     <p className="lp-card-body">{s.body}</p>
                   </div>
                   <div className="lp-card-media">
@@ -154,8 +154,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
 
         <section id="features" className="lp-section">
           <div className="lp-section-head" data-reveal="">
-            <p className="lp-eyebrow"><span className="lp-eyebrow-icon" aria-hidden="true" /><Proposed>{PROPOSED.featuresEyebrow}</Proposed></p>
-            <h2 className="lp-h2"><Proposed>{PROPOSED.featuresHeading}</Proposed></h2>
+            <p className="lp-eyebrow"><span className="lp-eyebrow-icon" aria-hidden="true" />{DESIGN_COPY.featuresEyebrow}</p>
+            <h2 className="lp-h2">{DESIGN_COPY.featuresHeading}</h2>
           </div>
           <div className="lp-features">
             {features.map((f, i) => (
@@ -170,18 +170,18 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
 
         <section id="faq" className="lp-section lp-faq-section">
           <div className="lp-section-head" data-reveal="">
-            <p className="lp-eyebrow"><span className="lp-eyebrow-icon" aria-hidden="true" /><Proposed>{PROPOSED.faqEyebrow}</Proposed></p>
-            <h2 className="lp-h2"><Proposed>{PROPOSED.faqHeading}</Proposed></h2>
+            <p className="lp-eyebrow"><span className="lp-eyebrow-icon" aria-hidden="true" />{DESIGN_COPY.faqEyebrow}</p>
+            <h2 className="lp-h2">{DESIGN_COPY.faqHeading}</h2>
           </div>
           <div className="lp-faq" data-reveal="">
-            {PROPOSED.faqs.map((f, i) => (
+            {DESIGN_COPY.faqs.map((f, i) => (
               <details key={i} className="lp-faq-item" name="faq">
                 <summary>
-                  <Proposed>{f.q}</Proposed>
+                  {f.q}
                   <span className="lp-chevron" aria-hidden="true" />
                 </summary>
                 <div className="lp-faq-answer">
-                  <p>{f.a === null ? REMOVAL_LINE : f.a === APPROVED.proof4 ? f.a : <Proposed>{f.a}</Proposed>}</p>
+                  <p>{f.a ?? REMOVAL_LINE}</p>
                 </div>
               </details>
             ))}
@@ -191,7 +191,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
 
         <section id="join" className="lp-join">
           <div className="lp-join-card" data-reveal="">
-            <p className="lp-eyebrow lp-eyebrow-light"><Proposed>{PROPOSED.joinEyebrow}</Proposed></p>
+            <p className="lp-eyebrow lp-eyebrow-light">{DESIGN_COPY.joinEyebrow}</p>
             <h2 className="lp-h2 lp-join-title">{APPROVED.cta}</h2>
             <p className="lp-join-lede">{APPROVED.selectionLine}</p>
             <p className="lp-join-notice">{APPROVED.formNotice}</p>
@@ -263,14 +263,11 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
             <Link href="/support">Support</Link>
             <a href="mailto:support@flairhealth.app">support@flairhealth.app</a>
           </nav>
-          {/* Placeholders until the PO supplies the real handles: not links, so nothing leads nowhere. */}
-          <div className="lp-social" aria-label="Social profiles, coming soon">
-            <span title="Instagram, link to come" aria-label="Instagram, link to come">
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="1.8" /><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" /><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor" /></svg>
-            </span>
-            <span title="LinkedIn, link to come" aria-label="LinkedIn, link to come">
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" strokeWidth="1.8" /><path d="M8 10.5V16M8 7.6v.1M11.5 16v-3.2c0-1.4.9-2.3 2.1-2.3s2 .9 2 2.3V16M11.5 10.5V16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
-            </span>
+          {/* The PO, 28 Oct 2026: X is the only social profile. A plain link; nothing loads from x.com. */}
+          <div className="lp-social">
+            <a href="https://x.com/Flairwellness" aria-label="Flair on X" title="Flair on X">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.2 4.7H5.4l11.3 14.5Z" fill="currentColor" /></svg>
+            </a>
           </div>
           <p className="lp-footer-copy">© {new Date().getFullYear()} Regal Pines Pte. Ltd. All rights reserved.</p>
           <a href="#top" className="lp-footer-top">Back to top</a>
