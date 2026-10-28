@@ -29,6 +29,15 @@ Two optional variables, `BETA_TEST_TOKEN_URL` and `BETA_TEST_SHEETS_BASE`, exist
 
 If any variable is missing the page still loads, and every submission is rejected with the form's error message.
 
+## Region: Singapore (sin1)
+
+Counsel's condition of 28 Oct 2026 (app repo `docs/legal/2026-10-28-counsel-second-batch-privacy-v43-landing-copy-hosting-and-afcd-cofid.md`, W7) for the form on Vercel Hobby: its function runs in Singapore, so the email does not leave Singapore with Vercel. The only transfer is to Google, and the PO accepts the Google Workspace Cloud Data Processing Addendum before the form goes live. If the service account sits in a Google Cloud project, that project's Cloud Data Processing Addendum is accepted too.
+
+- Set in code: `vercel.json` has `"regions": ["sin1"]`. No other file sets a region, runtime or `preferredRegion`.
+- Shown on 28 Oct 2026 at 16:35 SGT. Before (preview of `e043ad2`): `GET /api/beta` answered 405 with `x-vercel-id: sin1::iad1::…`, meaning the edge was in Singapore and the function in Washington, DC. After (preview of `aec5cb0`, https://flair-website-gdinikhnj-reubensoh-5319s-projects.vercel.app): three requests, each `x-vercel-id: sin1::sin1::…`, so the function now runs in Singapore. A GET writes nothing; no form was submitted.
+- Still to show: the deployment's function region in the Vercel dashboard (the PO's screenshot; the web dev has no Vercel access). Re-check `x-vercel-id` on production right after publishing.
+- Moving off Singapore needs counsel first: section 17's Vercel row says Singapore.
+
 ## Spam defenses
 
 A hidden trap field, a signed token that must be at least 3 seconds and at most 6 hours old, an 8 KB body cap, strict field validation, and dedupe on email. Per-IP rate limiting is not built; it needs either a Vercel Firewall rule (plan-dependent) or a data store.
