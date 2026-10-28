@@ -5,7 +5,7 @@ import { connection } from "next/server";
 import { CONSENT_TEXT, REMOVAL_LINE, SOURCES, countries, issueToken } from "../lib/beta";
 import { APPROVED, PROPOSED, SCREENS } from "./_landing/copy";
 import Motion from "./_landing/Motion";
-import { Phone, Proposed } from "./_landing/parts";
+import { Mascot, Phone, Proposed } from "./_landing/parts";
 import "./_landing/landing.css";
 
 export const metadata: Metadata = {
@@ -26,10 +26,10 @@ const NAV = [
 ];
 
 const STEPS = [
-  { title: PROPOSED.step1Title, body: APPROVED.proof1, screen: SCREENS.logging, screenLabel: "Logging" },
-  { title: PROPOSED.step2Title, body: APPROVED.proof2, screen: SCREENS.patterns, screenLabel: "Patterns" },
-  { title: PROPOSED.step3Title, body: APPROVED.proof4, screen: SCREENS.consent, screenLabel: "Consent sheet" },
-];
+  { title: PROPOSED.step1Title, body: APPROVED.proof1, screen: SCREENS.logging, screenLabel: "Logging", pose: "journal" },
+  { title: PROPOSED.step2Title, body: APPROVED.proof2, screen: SCREENS.patterns, screenLabel: "Patterns", pose: "intro" },
+  { title: PROPOSED.step3Title, body: APPROVED.proof4, screen: SCREENS.consent, screenLabel: "Consent sheet", pose: "ownership" },
+] as const;
 
 function Accent({ parts }: { parts: readonly [string, string, string] | readonly string[] }) {
   return (
@@ -117,6 +117,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
                 <Phone src={SCREENS.today} label="Today" priority />
               </div>
             </div>
+            <Mascot pose="welcome" className="lp-mascot lp-mascot-hero" />
           </div>
         </section>
 
@@ -136,6 +137,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
                   </div>
                   <div className="lp-card-media">
                     <Phone src={s.screen} label={s.screenLabel} />
+                    <Mascot pose={s.pose} className="lp-mascot lp-mascot-step" />
                   </div>
                 </div>
               </article>
@@ -184,6 +186,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ b
               </details>
             ))}
           </div>
+          <Mascot pose="first_entry" className="lp-mascot lp-mascot-ledge" />
         </section>
 
         <section id="join" className="lp-join">

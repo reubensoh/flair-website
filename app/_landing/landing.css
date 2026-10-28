@@ -396,6 +396,33 @@ html:has(.lp) body {
   border-radius: 35px;
 }
 
+/* ── Mascot (decorative; ownership and first_entry stay on light backgrounds) ── */
+.lp-mascot {
+  pointer-events: none;
+  user-select: none;
+  height: auto;
+}
+.lp-mascot-hero {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 150px - 170px);
+  width: 180px;
+}
+.lp-card-media {
+  position: relative;
+}
+.lp-mascot-step {
+  position: absolute;
+  bottom: 0;
+  left: max(0px, calc(50% - 125px - 100px));
+  width: 130px;
+}
+.lp-mascot-ledge {
+  display: block;
+  width: 160px;
+  margin: 72px auto -130px;
+}
+
 /* ── Ownership strip ───────────────────────────────── */
 .lp-own {
   position: relative;
@@ -838,6 +865,14 @@ html:has(.lp) body {
   .lp-card-media .lp-phone {
     width: 220px;
   }
+  .lp-mascot-hero {
+    left: max(4px, calc(50% - 150px - 120px));
+    width: 130px;
+  }
+  .lp-mascot-step {
+    left: max(0px, calc(50% - 110px - 76px));
+    width: 96px;
+  }
   .lp-features {
     grid-template-columns: 1fr;
   }
@@ -859,6 +894,14 @@ html:has(.lp) body {
   }
   .lp-band .lp-phone {
     width: 260px;
+  }
+  .lp-mascot-hero {
+    left: max(4px, calc(50% - 130px - 56px));
+    width: 96px;
+  }
+  .lp-mascot-ledge {
+    width: 128px;
+    margin-bottom: -96px;
   }
   .lp-section {
     padding: 96px 20px;
