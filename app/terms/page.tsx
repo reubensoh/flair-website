@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TermsOfService() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
@@ -16,7 +18,6 @@ export default function TermsOfService() {
           <p className="mb-2">Flair Health is designed for lifestyle guidance and general wellness purposes only. The App, including its AI-generated insights, wellness protocols, recommendations, and macro estimates, is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition, diet, or fitness regimen. Never disregard professional medical advice or delay in seeking it because of something you have read in this App.</p>
           <p className="mb-2">In particular, you acknowledge that:</p>
           <ul className="list-disc pl-6 space-y-1">
-            <li><strong>Health Wallet</strong> projections are population-level estimates derived from epidemiological data. They are not personalized medical or financial predictions.</li>
             <li><strong>AI recommendations</strong> (including Refresh Insights and Eat Now) are informational and motivational in nature. They do not constitute medical advice.</li>
             <li><strong>Daily Quests</strong> goals are motivational lifestyle suggestions. They are not treatment plans, exercise prescriptions, or dietary regimens.</li>
             <li><strong>Document Scanner</strong> biomarker extraction is automated and may contain errors, including misread values, units, or reference ranges. Always verify extracted data against your original report.</li>
@@ -63,19 +64,6 @@ export default function TermsOfService() {
           <p>Flair Health does not control how these providers process data beyond the terms of their respective API agreements. Flair Health does not store copies of data sent to AI providers.</p>
         </section>
         <section>
-          <h2 className="text-2xl font-semibold mb-3">6. Health Wallet</h2>
-          <p className="mb-2">The Health Wallet feature displays projected health-related monetary values. By using Health Wallet, you acknowledge and agree that:</p>
-          <ol className="list-decimal pl-6 space-y-1">
-            <li>All monetary values displayed in Health Wallet are denominated in a <strong>fictional dollar currency</strong> with no real-world monetary value.</li>
-            <li>Projections are derived from <strong>population-level epidemiological data</strong> and are not personalized financial or medical calculations.</li>
-            <li>Flair Health is <strong>not a financial product, financial service, or financial advisor</strong> within the meaning of any applicable financial services legislation, including Singapore&apos;s Securities and Futures Act and Financial Advisers Act.</li>
-            <li>You will <strong>not make financial, medical, or insurance decisions</strong> based on Health Wallet values.</li>
-            <li>Projections are for <strong>educational and motivational purposes only</strong> and carry no warranty of accuracy.</li>
-            <li>All Health Wallet computation occurs <strong>exclusively on your device</strong>. No server-side processing of Health Wallet data takes place.</li>
-            <li>Flair Health <strong>expressly disclaims any liability</strong> arising from decisions made based on Health Wallet projections.</li>
-          </ol>
-        </section>
-        <section>
           <h2 className="text-2xl font-semibold mb-3">7. Acceptable Use</h2>
           <p className="mb-2">You agree not to:</p>
           <ul className="list-disc pl-6 space-y-1">
@@ -112,7 +100,7 @@ export default function TermsOfService() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">11. Changes to These Terms</h2>
-          <p>We reserve the right to modify these Terms at any time. If we make material changes, we will notify you by updating the date at the top of these Terms and providing an in-app notice on your next launch. Your continued use of the App after changes are published constitutes your acceptance of the revised Terms.</p>
+          <p>We may update these Terms. When we do, the version and date at the top of this page change, and the change is recorded in the <Link href="/privacy#what-changed" className="text-blue-600 dark:text-blue-400 hover:underline">version history</Link> on our Privacy Policy page, which covers both documents. We do not send a notice inside the App. If a change affects what the App does with your data, the App&apos;s own agreement shows it to you before anything is sent under the new terms. By continuing to use the App after a change is published, you accept the revised Terms. If you do not accept them, stop using the App; everything you logged stays on your phone and remains yours.</p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">12. Governing Law</h2>

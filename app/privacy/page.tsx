@@ -109,24 +109,12 @@ export default function PrivacyPolicy() {
           <p className="mt-3">With your permission, Flair imports the data categories listed above from Apple Health. This data is stored locally on your device and is never transmitted to any server unless you explicitly invoke an AI feature that includes it (such as Refresh Insights, as section 5 lists). Flair also reads which apps or wearable devices have written data to Apple Health (for example, Garmin Connect or Oura) to detect your connected devices. This information is stored locally and only the brand category (e.g. &quot;Garmin&quot;, &quot;Oura&quot;), not the device model or firmware version, is included in Refresh Insights requests with your explicit consent.</p>
         </section>
         <section>
-          <h2 className="text-2xl font-semibold mb-3">7. Health Wallet</h2>
-          <p className="mb-2">Health Wallet estimates the long-term economic implications of daily health behaviors using population-level epidemiological data.</p>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Values are expressed in a fictional dollar currency. Health Wallet is not real money, not financial advice, and not a financial product.</li>
-            <li><strong>All computation occurs exclusively on your device.</strong> Health Wallet makes zero network calls. No data is sent to any server for processing.</li>
-            <li>Cost tables, regional scalars, and epidemiological constants are embedded in the app binary and do not require a network connection.</li>
-            <li>Health Wallet transaction history is stored on-device within the encrypted Health Passport.</li>
-            <li>Health Wallet data is included in encrypted <code>.flair</code> backup snapshots.</li>
-          </ul>
-        </section>
-        <section>
           <h2 className="text-2xl font-semibold mb-3">8. Flair Services</h2>
           <p className="mb-2">The app connects to <code>api.flairhealth.app</code> for certain non-AI functions:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li><strong>Latency Estimates:</strong> The endpoint <code>api.flairhealth.app/api/stats</code> provides latency estimates used for progress bars during AI requests. This endpoint receives only a feature identifier. It is stateless: no user data is sent, retained, or logged.</li>
             <li><strong>IP Address:</strong> AI providers never see your IP address; requests are routed through our server. Our server sees your IP address in transit, as every server does. The only application-layer use is a one-way cryptographic hash of it, held for about two minutes, solely to prevent abuse (rate limiting): never the raw IP, never linked to your identity beyond that window, never used to profile you, and never stored in any database. Our hosting provider&apos;s own infrastructure logs are bounded by their published retention policy, which we do not control and cannot shorten.</li>
           </ul>
-          <p className="mt-3">Health Wallet makes zero network calls. All wallet computation is performed entirely on-device.</p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">9. Location &amp; Environment Data</h2>
@@ -220,12 +208,12 @@ export default function PrivacyPolicy() {
           </div>
         </section>
         <section>
-          <h2 className="text-2xl font-semibold mb-3">What Changed</h2>
+          <h2 id="what-changed" className="text-2xl font-semibold mb-3 scroll-mt-8">What Changed</h2>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> A correction. In builds up to 49, four paths could request local weather and air quality data using your approximate location without the Local Conditions consent: an outdoor workout imported from Apple Health, that same import run by a background task, a pass back over workouts already on the phone, and the Outdoors answer on a workout. The statements in sections 1, 2, 5 and 9 that no data leaves your device without your per-feature consent did not hold for those paths. The fix checks that consent at a single point and fails closed if it cannot be read. No data beyond your position rounded to about a kilometre was involved, and nothing identifying you was sent to the weather services. The fix reached testers in build 50 on 24 October 2026.</p>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> Section 2: removed the interim exception for the stated health objective. The fix, which puts the objective on the Refresh Insights, Inspire Me and Weekly Wrapped consent forms, reached testers in build 48 in September 2026; the exception should have come out then and stayed up until this version.</p>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> Section 5: &quot;anonymous health profile&quot; is replaced by a description of what each feature sends (profile bands, or for Body Age the figures themselves). That data carried no name or identifier, but it was about you, so &quot;anonymous&quot; was the wrong word; the section now says what goes.</p>
-          <p className="mb-3"><strong>Version 43, October 2026.</strong> Removed Body Age, Weekly Wrapped and Inspire Me from sections 1, 5, 6, 8 and 14: they are switched off in the app and nobody can use them. What each sent while it was available is in the earlier versions of this policy, which stay in the history below. Their text, and their agreements in the app, return together before any of them returns.</p>
-          <p className="mb-3"><strong>Version 43, October 2026.</strong> Closing paragraph: removed the promise that material changes are announced in the app on your next launch, which the app does not do. The version history on this page, and the app&apos;s own agreements for what it sends, are the record.</p>
+          <p className="mb-3"><strong>Version 43, October 2026.</strong> Removed Body Age, Weekly Wrapped and Inspire Me and Health Wallet from sections 1, 5, 6, 7, 8 and 14: they are switched off in the app and nobody can use them. What each sent while it was available is in the earlier versions of this policy, which stay in the history below. Their text, and their agreements in the app, return together before any of them returns.</p>
+          <p className="mb-3"><strong>Version 43, October 2026.</strong> Closing paragraph: removed the promise that material changes are announced in the app on your next launch, which the app does not do. The version history on this page, and the app&apos;s own agreements for what it sends, are the record. Terms section 11: removed the promise of an in-app notice on your next launch, which the App does not give; the version date and this history are the record.</p>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> Section 14: the birth year&apos;s uses are now stated in full. It also sets the age group that Refresh Insights, Eat Now and Do Now send, and it gates the journal training export; the earlier text named only AI availability and Body Age. The agreements in the app listed the age group throughout.</p>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> Section 5, Daily Quests: the list of what it sends was wrong both ways. It named a health profile that is not sent, and it omitted injuries, food allergies, medical conditions and fasting mode, which are. The agreement shown in the app listed them correctly throughout; the policy now matches it.</p>
           <p className="mb-3"><strong>Version 43, October 2026.</strong> Section 5, Eat Now: the list of what it sends was incomplete and named a profile that is not sent. It now lists the venue and area, your drinks preference, your age group, the medical conditions by name, today&apos;s food summary and active food quests, as the agreement shown in the app has listed them.</p>
