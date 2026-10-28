@@ -64,6 +64,9 @@ export default function TermsOfService() {
           <p>Flair Health does not control how these providers process data beyond the terms of their respective API agreements. Flair Health does not store copies of data sent to AI providers.</p>
         </section>
         <section>
+          <p className="text-gray-500 dark:text-gray-400"><strong>6.</strong> (This section described Health Wallet, which is switched off in the app. See <Link href="/privacy#what-changed" className="text-blue-600 dark:text-blue-400 hover:underline">What Changed</Link>, Version 43.)</p>
+        </section>
+        <section>
           <h2 className="text-2xl font-semibold mb-3">7. Acceptable Use</h2>
           <p className="mb-2">You agree not to:</p>
           <ul className="list-disc pl-6 space-y-1">
@@ -77,7 +80,7 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-2xl font-semibold mb-3">8. Intellectual Property</h2>
           <ul className="list-disc pl-6 space-y-1">
-            <li>&quot;Flair Health,&quot; &quot;Health Passport,&quot; &quot;Health Wallet,&quot; the Flair logo, and all related marks, logos, and product names are trademarks or pending trademarks of Regal Pines Pte. Ltd. All rights reserved.</li>
+            <li>&quot;Flair Health&quot;, &quot;Health Passport&quot;, the Flair logo and the product names in the App belong to Regal Pines Pte. Ltd. They are not registered trade marks, and no application has been filed. You may not use them without our written permission. All rights reserved.</li>
             <li>The Flair Health application, including its design, code, algorithms, methodologies, and content, is protected by copyright, trade secret, and other intellectual property laws.</li>
             <li>You may not copy, modify, distribute, reverse engineer, or create derivative works of the application or its methodologies.</li>
             <li>All rights not expressly granted under these Terms are reserved by Regal Pines Pte. Ltd.</li>
