@@ -29,6 +29,20 @@ Two optional variables, `BETA_TEST_TOKEN_URL` and `BETA_TEST_SHEETS_BASE`, exist
 
 If any variable is missing the page still loads, and every submission is rejected with the form's error message.
 
+### What is actually set (the PO's Vercel dashboard, screenshot relayed by the architect on 28 Oct 2026; values set on 6 Oct 2026)
+
+| Variable | Environments |
+|---|---|
+| `BETA_FORM_SECRET` | Production and Preview, separate values |
+| `BETA_SHEET_ID` | Production and Preview, separate values (separate Sheets) |
+| `BETA_SHEET_TAB` | one value for Production and Preview |
+| `GOOGLE_SA_EMAIL` | one value for Production and Preview |
+| `GOOGLE_SA_PRIVATE_KEY` | one value for Production and Preview |
+
+Deviation from step 4: the service account (email and key) is shared by Production and Preview. The Sheets and the form secrets are separate, so a preview deployment writes only to the preview Sheet, unless someone changes the code a preview runs to use another Sheet id: the shared account can edit both Sheets. Accepted for now by the architect (28 Oct 2026); no rotation asked of the PO. A separate preview service account, shared with the preview Sheet only, closes the gap later.
+
+The production path has not yet been tested end to end. Right after publishing: one recorded POST on production with a made-up address, check the row lands in the production Sheet with the expected `consent_version`, then delete the row.
+
 ## Region: Singapore (sin1)
 
 Counsel's condition of 28 Oct 2026 (app repo `docs/legal/2026-10-28-counsel-second-batch-privacy-v43-landing-copy-hosting-and-afcd-cofid.md`, W7) for the form on Vercel Hobby: its function runs in Singapore, so the email does not leave Singapore with Vercel. The only transfer is to Google, and the PO accepts the Google Workspace Cloud Data Processing Addendum before the form goes live. If the service account sits in a Google Cloud project, that project's Cloud Data Processing Addendum is accepted too.
