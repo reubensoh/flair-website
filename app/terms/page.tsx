@@ -41,7 +41,7 @@ export default function TermsOfService() {
             <li>AI-generated content is for lifestyle guidance and general wellness purposes and should not be used to manage chronic conditions, allergies, or acute medical needs.</li>
             <li>You are responsible for reviewing and verifying AI-generated advice before acting upon it.</li>
             <li>AI-generated Protocol targets are lifestyle suggestions only. They do not account for your complete medical history and must not replace the advice of a qualified healthcare provider.</li>
-            <li>Daily Quests may temporarily pause or deprioritize tasks based on your own journal entries (e.g., a logged injury or illness). This reflects your recorded context and is not a medical recommendation to avoid any activity. Always consult a healthcare provider for injury- or illness-related decisions.</li>
+            <li>Daily Quests may temporarily pause or deprioritise tasks based on your own journal entries (e.g., a logged injury or illness). This reflects your recorded context and is not a medical recommendation to avoid any activity. Always consult a healthcare provider for injury- or illness-related decisions.</li>
             <li>Smart Habits generates predictive journal entries based on your observed patterns. These suggestions are automated and may not reflect your actual activities on any given day. You are responsible for confirming or dismissing each prediction before it is logged.</li>
             <li>Document Scanner biomarker extraction is automated and may misread values, units, or reference ranges. Always verify extracted data against your original report. Flair Health is not liable for clinical decisions based on AI-extracted biomarker data.</li>
             <li>AI inference may be performed by multiple third-party providers (currently Google Cloud Vertex AI, OpenAI GPT-4.1-mini and GPT-4.1, and Anthropic Claude). Provider selection is generally automatic and based on service availability. Certain features, such as Eat Now, exclusively use Google Cloud Vertex AI because they require real-time location search, a capability only available through this provider.</li>
@@ -72,7 +72,7 @@ export default function TermsOfService() {
           <ul className="list-disc pl-6 space-y-1">
             <li>Reverse engineer, decompile, or disassemble any aspect of the App or our AI routing servers.</li>
             <li>Attempt to bypass, exploit, or spam the Insight Energy (&quot;Zaps&quot;) system or our AI APIs.</li>
-            <li>Use the App for any illegal or unauthorized purpose.</li>
+            <li>Use the App for any illegal or unauthorised purpose.</li>
             <li>Use the App to make medical, dietary, or treatment decisions without consulting a qualified healthcare provider.</li>
           </ul>
           <p className="mt-3"><strong>Virtual Items:</strong> Virtual items, including Insight Energy (&quot;Zaps&quot;) or &quot;Flames,&quot; have no real-world monetary value, cannot be exchanged for cash, and are licensed to you solely for use within the App. Regal Pines Pte. Ltd. reserves the right to modify, cap, or revoke these virtual items at any time without compensation.</p>
@@ -99,7 +99,7 @@ export default function TermsOfService() {
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">10. Limitation of Liability</h2>
-          <p>To the maximum extent permitted by law, Flair Health (and its developers, partners, and affiliates) shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the App; (b) any conduct or content of any third party on the App; or (c) any unauthorized access, use, or alteration of your transmissions or content.</p>
+          <p>To the maximum extent permitted by law, Flair Health (and its developers, partners, and affiliates) shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the App; (b) any conduct or content of any third party on the App; or (c) any unauthorised access, use, or alteration of your transmissions or content.</p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">11. Changes to These Terms</h2>

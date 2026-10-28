@@ -165,6 +165,7 @@ collection, use, disclosure, retention, or user rights.
 |---|---|---|---|
 | 2026-08-24 | Privacy, Terms | Added the "Version N. Last Updated: \<date\>." line to both pages, and this change log itself. Introduces the versioning system; asserts no new fact about data handling. | `46d3cb2` |
 | 2026-09-06 | Privacy, Terms | American spelling sweep (item 524), public pages only: analysing/analyses (verb)->analyzing/analyzes, behavioural/behaviours->behavioral/behaviors, personalised->personalized, anonymised->anonymized. Ruled editorial by the lawyer; asserts no new fact about data handling. Historical entries in this log are unaffected. | `e82a2d2` |
+| pending; confirm at merge | Privacy, Terms | British spelling pass (the PO's decision of 2026-10-28, relayed by the lead architect; counsel's standing rule: British for the website), public pages only: analyzing/analyzes/analyzed->analysing/analyses/analysed, minimized->minimised, behavioral->behavioural, anonymized->anonymised (Privacy S1, S2, S5); deprioritize->deprioritise, unauthorized->unauthorised (Terms S4, S7, S10). Kept: counsel's verbatim text (already British), the quoted Version 42 sentence "We do not sell, share, or monetize your information" in the Version 43 row, "glucose meters" (a device), product and API names, code and URLs. The landing page, /support, /beta/thanks and the form's consent and removal lines needed no change, so the form's consent_version is unchanged. Asserts no new fact about data handling. | pending |
 
 ## Note on Version 38
 
