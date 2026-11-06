@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Mascot } from "../../_landing/parts";
 
 export const metadata: Metadata = {
   title: "Flair Health",
@@ -10,6 +11,7 @@ export default function BetaThanks() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center min-h-screen bg-[#EFEFEF] dark:bg-[#201E4B]">
       <main className="flex flex-col items-center text-center px-6 py-24 max-w-md w-full gap-6">
+        <Mascot pose="get_to_know_you" className="w-[100px] h-auto" />
         <h1 className="text-2xl font-semibold tracking-tight text-[#201E4B] dark:text-[#ECE9E7]">
           You&apos;re on the list.
         </h1>
