@@ -94,7 +94,7 @@ export default function TermsOfService() {
             <li>Flair Health cannot recover data if the seed phrase is lost; no server-side backup exists.</li>
             <li>There is no password reset mechanism.</li>
             <li>The <code>.flair</code> export format uses AES-256-GCM encryption.</li>
-            <li>Upon deletion or uninstallation of the App, all local data is permanently removed.</li>
+            <li>Deleting the App removes the journal and Health Passport data the App stores on your device, and the backups in the App&apos;s own folder. Your device may keep a small number of items the App placed in its secure storage after the App is deleted, such as your 12-word key, an encryption key and security settings. If you chose the Apple ID option for backups, its key is also kept in your iCloud Keychain. To remove those items as well, use Delete All Data in the App before deleting it. Deleting the App does not remove backups you saved to another location, such as iCloud Drive or another app.</li>
           </ul>
         </section>
         <section>

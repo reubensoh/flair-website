@@ -143,8 +143,8 @@ export default function PrivacyPolicy() {
           <p className="mb-2">You have full control:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>Delete everything at any time via <strong>Settings → Reset App</strong>.</li>
-            <li>Or simply uninstall Flair: your local data disappears with the app.</li>
-            <li>Note: Data that originates from Apple Health or Google Health Connect is managed through those platforms and is not deleted by uninstalling Flair.</li>
+            <li>Or delete Flair from your phone. Your journal, your Health Passport and the backups in Flair&apos;s own folder go with it. A few items Flair keeps in your phone&apos;s secure storage (the Keychain) can stay after the app is deleted: your 12-word key, your security settings and an encryption key. They stay so that you can restore a backup if you reinstall Flair. If you chose to protect your backups with your Apple ID, that key is also kept in your iCloud Keychain and reaches your other Apple devices; we have no access to it. To remove all of these too, use Delete All Data in Flair before you delete it. Backups you saved elsewhere, such as in iCloud Drive, stay where you saved them.</li>
+            <li>Note: Data that originates from Apple Health or Google Health Connect, and the weight, height and mindful minutes Flair saved to Apple Health, are managed through those platforms and are not deleted when you delete Flair.</li>
           </ul>
         </section>
         <section>
