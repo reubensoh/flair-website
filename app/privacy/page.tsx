@@ -2,19 +2,19 @@ export default function PrivacyPolicy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 43. Last Updated: November 6, 2026.</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 44. Last Updated: November 6, 2026.</p>
       <p className="mb-4">Flair Health is a product of Regal Pines Pte. Ltd., a company incorporated in Singapore. References to &quot;Flair,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot; refer to Regal Pines Pte. Ltd.</p>
       <p className="mb-8">Flair is a local-first wellness app, privacy-first until we can verifiably be more. This policy explains what data leaves your device, when, and why.</p>
       <div className="space-y-8">
         <section>
           <h2 className="text-2xl font-semibold mb-3">1. No Cloud, No Accounts, No Tracking</h2>
-          <p className="mb-2">Flair is fully offline-first.</p>
+          <p className="mb-2">Flair is offline-first: it keeps your data on your device and works without a connection, except for the features that need one: the AI features, Local Conditions and route maps.</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>We never require an account, email, or phone number.</li>
             <li>Your journal entries, habits, scores, and AI insights live only on your device.</li>
             <li>We do not have a backend database for your personal data.</li>
             <li>We do not sell, share, or monetize your information.</li>
-            <li>The only exception is when you explicitly invoke an AI feature (Refresh Insights, Magic Lens, Eat Now, Document Scanner, Body Age, Daily Quests, Inspire Me, Do Now, or Weekly Wrapped). Each feature requires your explicit approval via an in-app consent prompt before any data is transmitted. See Section 5. Flair makes no network request on app launch. The first server contact only occurs when you actively use an AI feature and have provided explicit consent.</li>
+            <li>One exception is when you explicitly invoke an AI feature (Refresh Insights, Magic Lens, Eat Now, Document Scanner, Body Age, Daily Quests, Inspire Me, Do Now, Weekly Wrapped, or Ask Flair). Each feature requires your explicit approval via an in-app consent prompt before any data is transmitted. See Section 5. Flair makes no network request on app launch, with two exceptions you control. If you have turned on Local Conditions, opening Today refreshes the weather and air quality for your area through Flair&apos;s server, as that agreement says. If you took a Magic Lens photo while offline, Flair sends it, as you approved, when the app next has a connection. Otherwise the first server contact occurs when you use an AI feature you have approved.</li>
             <li>A pseudonymous identifier, generated on your device and rotating daily, is included with AI requests. It is not derived from any device or account identifier, and it is never forwarded to an AI provider. Section 5 describes what it is used for and what is retained alongside it.</li>
           </ul>
           <p className="mt-3"><strong>Smart Habits:</strong> Flair learns your recurring wellness patterns (such as meals, supplements, or workouts) by analyzing the timing and content of your journal entries. This analysis is performed entirely on your device. No habit data, patterns, or predictions are transmitted to any server. You can confirm or dismiss any predicted entry, and patterns that are consistently dismissed are automatically deactivated.</p>
