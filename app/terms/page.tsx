@@ -81,7 +81,7 @@ export default function TermsOfService() {
           <h2 className="text-2xl font-semibold mb-3">8. Intellectual Property</h2>
           <ul className="list-disc pl-6 space-y-1">
             <li>&quot;Flair Health&quot;, &quot;Health Passport&quot;, the Flair logo and the product names in the App belong to Regal Pines Pte. Ltd. They are not registered trade marks, and no application has been filed. You may not use them without our written permission. All rights reserved.</li>
-            <li>The Flair Health application, including its design, code, algorithms, methodologies, and content, is protected by copyright, trade secret, and other intellectual property laws.</li>
+            <li>The Flair Health application, including its design, code, algorithms, methodologies, and content, is protected by copyright, trade secret, and other intellectual property laws. Some exercise drawings and animations in the app are shared by their artists under a Creative Commons licence, which the app&apos;s credits screen names. The licence terms for those drawings are the artists&apos; licence, not these Terms.</li>
             <li>You may not copy, modify, distribute, reverse engineer, or create derivative works of the application or its methodologies.</li>
             <li>All rights not expressly granted under these Terms are reserved by Regal Pines Pte. Ltd.</li>
           </ul>
