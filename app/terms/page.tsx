@@ -4,7 +4,7 @@ export default function TermsOfService() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-gray-800 dark:text-gray-200 leading-relaxed">
       <h1 className="text-4xl font-bold mb-2">Terms of Service</h1>
-      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 43. Last Updated: pending, confirm at merge.</p>
+      <p className="mb-8 text-sm text-gray-500 dark:text-gray-400">Version 45. Last Updated: pending, confirm at merge.</p>
       <p className="mb-8">Flair Health is a product of Regal Pines Pte. Ltd. (Singapore). By downloading, accessing, or using the Flair Health mobile application (&quot;App&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, please do not use the App.</p>
       <div className="space-y-8">
         <section>
@@ -64,7 +64,7 @@ export default function TermsOfService() {
           <p>Flair Health does not control how these providers process data beyond the terms of their respective API agreements. Flair Health does not store copies of data sent to AI providers.</p>
         </section>
         <section>
-          <p className="text-gray-500 dark:text-gray-400"><strong>6.</strong> (This section described Health Wallet, which is switched off in the app. See <Link href="/privacy#what-changed" className="text-blue-600 dark:text-blue-400 hover:underline">What Changed</Link>, Version 43.)</p>
+          <p className="text-gray-500 dark:text-gray-400"><strong>6.</strong> (This section described Health Wallet, which is switched off in the app. See <Link href="/privacy#what-changed" className="text-blue-600 dark:text-blue-400 hover:underline">What Changed</Link>, Version 45.)</p>
         </section>
         <section>
           <h2 className="text-2xl font-semibold mb-3">7. Acceptable Use</h2>
