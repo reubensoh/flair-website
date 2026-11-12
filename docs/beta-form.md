@@ -1,5 +1,7 @@
 # Beta sign-up form: how it works and how to set it up
 
+**Branches (28 Oct 2026, the lead architect):** `web/landing-framer-design` is the branch that publishes, and it holds the form, Version 43 of the privacy policy and the Terms, and this document. `web/landing-beta-form` is retired as superseded: its last commit is `9d98238`, and it lacks the Version 43 changes made after that on `web/v43-remove-hidden-features` (the removal of Body Age, Weekly Wrapped, Inspire Me and Health Wallet, sections 6 and 14, the closing paragraph, and the Terms joining Version 43 with section 11 replaced). Make no further changes on it. The remote branch stays as history; deleting it is the PO's call.
+
 The landing page posts a plain HTML form to `/api/beta` on our own domain (`app/api/beta/route.ts`, helpers in `lib/beta.ts`). The route validates the request and appends one row to a Google Sheet owned by Regal Pines. No script, frame or cookie from any other company is on the page, and the route sets no cookie.
 
 ## What is stored (one row per person)
