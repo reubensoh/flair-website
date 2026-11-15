@@ -6,7 +6,10 @@
 // and its Content-Security-Policy forbids every script. scripts/check-share.mjs pins this at build time.
 //
 // Words: PROPOSED for counsel (Web Dev, 15 Nov), except the subtitle, which is counsel's of 16 Oct.
-// No App Store button yet: Flair has no App Store listing (TestFlight only). Google Play only if an Android build exists.
+// No-app offer (the PO, 15 Nov): a link to our homepage, for now.
+// PRE-LAUNCH (register row, the architect): before the App Store candidate, replace the homepage link with the App Store
+// page, and Google Play if an Android build exists, once the store link exists. check-share.mjs forbids off-site URLs, so
+// that change must also allow the store URL explicitly.
 
 const HTML = `<!doctype html>
 <html lang="en-GB">
@@ -34,6 +37,7 @@ const HTML = `<!doctype html>
   <img src="/app_icon.png" alt="">
   <h1>Flair Health</h1>
   <p>Someone shared something from Flair with you. To see it, open this link on an iPhone that has Flair installed.</p>
+  <p><a href="/">Learn more about Flair</a></p>
   <p class="muted">Your health data is kept on your phone. When you send any of it to AI, you get a receipt.</p>
   <nav><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a></nav>
 </main>
