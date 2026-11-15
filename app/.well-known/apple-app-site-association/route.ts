@@ -3,9 +3,8 @@
 // the apex redirects to www, so the entitlement must be applinks:www.flairhealth.app (agreed with D).
 // The share payload lives in the URL fragment, which is never sent to this server and is not matched here.
 //
-// PLACEHOLDER: TEAM_ID and BUNDLE_ID come from D. scripts/check-share.mjs fails the build while either is unset.
-const TEAM_ID = "TEAMID_FROM_D";
-const BUNDLE_ID = "BUNDLE_ID_FROM_D";
+const TEAM_ID = "RL4UGKLN9W"; // DEVELOPMENT_TEAM in the app's ios/Runner.xcodeproj (app main)
+const BUNDLE_ID = "com.regalpines.flairHealth"; // confirmed by D, 15 Nov
 
 export const dynamic = "force-static";
 
